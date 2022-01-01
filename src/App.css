@@ -1,0 +1,27 @@
+.App {
+    text-align: center;
+}
+
+li {
+    font-size: 2rem;
+    color: #ffffff;
+    display: inline;
+    float: right;
+    padding: 0.5rem 2rem 0rem 2rem;
+}
+
+ul {
+    background-color: orange;
+    list-style-type: none;
+    margin: 0rem;
+    padding: 1rem 2rem 5rem 2rem;
+}
+
+.ImgStyle {
+    font-size: 7rem;
+}
+
+button {
+    font-size: 1.7rem;
+    padding: 1rem;
+}
