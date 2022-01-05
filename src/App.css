@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Michroma&family=Poiret+One&family=Quicksand&display=swap');
+
 .App {
     text-align: center;
 }
@@ -7,6 +9,7 @@ li {
     color: #140a0a;
     display: inline;
     float: right;
+    font-family: 'Quicksand', sans-serif;
     padding: 0.5rem 2rem 0rem 2rem;
 }
 
@@ -30,10 +33,6 @@ button {
     font-size: 1.7rem;
     padding: 1rem;
 }
-/* 
-.CheckoutBtn {
-    
-} */
 
 .CartCountStyle {
     font-size: 2.5rem;
@@ -47,14 +46,45 @@ img {
 }
 
 .ImgStyle {
-    font-size: 10rem;
+    background-color: #ffa500;
 }
-
-/* .ListStyle {
-    margin: 1rem;
-} */
 
 .CheckoutBtnStyle {
     padding: -5rem;
     margin-top: -2rem;
 }
+
+button {
+    margin: 0.5rem;
+}
+
+
+/*
+--------------------------------------------------
+Font style 
+---------------------------------------------------
+*/
+h1 {
+    font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    font-size: 2.7rem;
+}
+
+.RatingsTabStyle {
+    font-family: 'Michroma', sans-serif;
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-family: 'Lato', sans-serif;
+    font-size: 2rem;
+}
+
+
+/*
+possible new style for menu items
+*/
+/* .ItemPanelStyle {
+    background-color: #aca9a9;
+    padding: 2rem;
+} */
