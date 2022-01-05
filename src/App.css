@@ -20,10 +20,6 @@ ul {
     padding: 1rem 2rem 5rem 2rem;
 }
 
-.ImgStyle {
-    font-size: 7rem;
-}
-
 button {
     font-size: 1.7rem;
     padding: 1rem;
@@ -41,8 +37,9 @@ button {
 }
 
 img {
-    width: 20rem;
-    height: 15rem;
+    width: 28rem;
+    height: 20rem;
+    border: 5px solid #ffa500;
 }
 
 .ImgStyle {
@@ -57,7 +54,6 @@ img {
 button {
     margin: 0.5rem;
 }
-
 
 /*
 --------------------------------------------------
@@ -79,7 +75,6 @@ h2 {
     font-family: 'Lato', sans-serif;
     font-size: 2rem;
 }
-
 
 /*
 possible new style for menu items
