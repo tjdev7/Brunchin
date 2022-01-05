@@ -1,6 +1,5 @@
-import React, { useState } from 'react'
+import React from 'react'
 import 'bootstrap/dist/css/bootstrap.css'
-import { BsCartFill, BsFillPlusSquareFill } from 'react-icons/bs'
 import { Container } from 'react-grid-system'
 
 import { IoFastFoodSharp } from 'react-icons/io5'

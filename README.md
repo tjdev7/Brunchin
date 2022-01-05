@@ -4,11 +4,11 @@
 
 Food ordering dashboard app
 
-![Splash page](./public/img/Fodee_Splash.png)
+![Splash page](./public/img/fodee_Splash.png)
 
 ## Why this app as created:
 
-Proof of concept: This app was created as an example of React state, regular expressions and core Javascript functions.
+Proof of concept: This app was created as an example of React state, regular expressions, core Javascript functions and seamless U.X design.
 
 ## How to use:
 
@@ -37,7 +37,9 @@ Proof of concept: This app was created as an example of React state, regular exp
 
 ### Future app goals:
 
--   [ ] Fix addition error with float number where sum shows dozens of numbers after float period
--   [ ] Working checkout button for numbers. With boolean conditionals
--   [ ] Fix subtraction error where numbers keep subtracting from each state even as state has 0 values inside of it
+-   [ ] Fix addition error with float number where sum shows dozens of numbers after float period (example: cart sum shows up as $32.2000000000 instead of fixed amount)
+-   [ ] Working checkout button for numbers. With boolean conditionals that show data when cart is active or not
+-   [ ] Fix subtraction error where numbers keep subtracting from each state even as state has 0 values inside of it. (example: cart goes negative when remove button is pressed after no item and cart sum is at 0)
+-   [ ] Disable remove button when no item is in car
 -   [ ] Perfect U.X. design for app
+-   [ ] Refactor code and cut code volume. Divive the majority of UI elements into smaller components

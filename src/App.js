@@ -1,87 +1,40 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { BsCartFill } from 'react-icons/bs'
 import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
 
-import { Container } from 'react-grid-system'
+import { AiOutlineStar, AiFillStar } from 'react-icons/ai'
 
-import { IoFastFoodSharp } from 'react-icons/io5'
+import { Container, Row, Col } from 'react-grid-system'
 
 import HomeTab from './components/HomeTab'
-import MenuItems from './components/MenuItems'
-import CheckoutTab from './components/CheckoutTab'
+// import MenuItems from './components/MenuItems'
+// import CheckoutTab from './components/CheckoutTab'
 
-import { Item1_SPS } from './assets/Item1_SPS.png'
-import { Item2_BCP } from './assets/Item2_BCP.png'
-import { Item3_BF } from './assets/Item3_BF.png'
-import { Item4_CS } from './assets/Item4_CS.png'
-import { Item5_BN } from './assets/Item5_BN.png'
-import { Item6_CAP } from './assets/Item5_BN.png'
-import { Item7_ENS } from './assets/Item7_ENS.png'
-import { Item8_TE } from './assets/Item8_TE.png'
+import item1_SPS from './assets/item1_SPS.png'
+import item2_BCP from './assets/item2_BCP.png'
+import item3_BF from './assets/item3_BF.png'
+import item4_CS from './assets/item4_CS.png'
+import item5_BN from './assets/item5_BN.png'
+import item6_CAP from './assets/item6_CAP.png'
+import item7_ENS from './assets/item7_ENS.png'
+import item8_TE from './assets/item8_TE.png'
 
 import './App.css'
 
-// const Checkout =
-// handleclick = Your cart is empty
+// Checkout Command
+const CheckoutBtn = (e) => {
+    e.preventDefault()
 
-// ItemSum - ItemSum
+    alert('Your order has been made')
 
-// CartSum - CartSum
+    this.setState({ Itemcount: 0, CartSum: 0 })
 
-// if (ItemSum = 0 && CartSum == 0) {
-//    return Your cart is currently empty
-//}
+    //Itemcount: 0,
+    //    CartSum: 0,
 
-export const items = [
-    {
-        id: 1,
-        pic: <IoFastFoodSharp />,
-        name: 'Sweet Potato Salad',
-        price: '8.64',
-    },
-    {
-        id: 2,
-        pic: <IoFastFoodSharp />,
-        name: 'Brown Crust Pizza',
-        price: '15.35',
-    },
-    {
-        id: 3,
-        pic: <IoFastFoodSharp />,
-        name: 'Mega Burger with Fries',
-        price: '14.71',
-    },
-    {
-        id: 4,
-        pic: <IoFastFoodSharp />,
-        name: 'Chips with Salsa',
-        price: '9.64',
-    },
-    {
-        id: 5,
-        pic: <IoFastFoodSharp />,
-        name: 'Noodles with eggs',
-        price: '17.24',
-    },
-    {
-        id: 6,
-        pic: <IoFastFoodSharp />,
-        name: 'Cappuccino with foam',
-        price: '7.84',
-    },
-    {
-        id: 7,
-        pic: <IoFastFoodSharp />,
-        name: 'Pasta with Broccoli',
-        price: '18.77',
-    },
-    {
-        id: 8,
-        pic: <IoFastFoodSharp />,
-        name: 'Toast with fried eggs',
-        price: '12.48',
-    },
-]
+    // if (Itemcount = 0 && CartSum = 0)
+    // return alert('Your cart is empty. Order some new things!');
+}
 
 export default class App extends React.Component {
     state = {
@@ -98,107 +51,108 @@ export default class App extends React.Component {
     ItemRemove1 = () => {
         this.setState({
             Itemcount: this.state.Itemcount - 1,
-            CartSum: this.state.CartSum - (9.64).toFixed(2),
+            CartSum: this.state.CartSum - 9.64,
         })
     }
 
     ItemAdd2 = () => {
         this.setState({
             Itemcount: this.state.Itemcount + 1,
-            CartSum: this.state.CartSum + (15.35).toFixed(2),
+            CartSum: this.state.CartSum + 15.35,
         })
     }
 
     ItemRemove2 = () => {
         this.setState({
             Itemcount: this.state.Itemcount - 1,
-            CartSum: this.state.CartSum - (15.35).toFixed(2),
+            CartSum: this.state.CartSum - 15.35,
         })
     }
 
     ItemAdd3 = () => {
         this.setState({
             Itemcount: this.state.Itemcount + 1,
-            CartSum: this.state.CartSum + (14.71).toFixed(2),
+            CartSum: this.state.CartSum + 14.71,
         })
     }
 
     ItemRemove3 = () => {
         this.setState({
             Itemcount: this.state.Itemcount - 1,
-            CartSum: this.state.CartSum - (14.71).toFixed(2),
+            CartSum: this.state.CartSum - 14.71,
         })
     }
 
     ItemAdd4 = () => {
         this.setState({
             Itemcount: this.state.Itemcount + 1,
-            CartSum: this.state.CartSum + (9.64).toFixed(2),
+            CartSum: this.state.CartSum + 8.15,
         })
     }
 
     ItemRemove4 = () => {
         this.setState({
             Itemcount: this.state.Itemcount - 1,
-            CartSum: this.state.CartSum - (9.64).toFixed(2),
+            CartSum: this.state.CartSum - 8.15,
         })
     }
 
     ItemAdd5 = () => {
         this.setState({
             Itemcount: this.state.Itemcount + 1,
-            CartSum: this.state.CartSum + (17.24).toFixed(2),
+            CartSum: this.state.CartSum + 17.24,
         })
     }
 
     ItemRemove5 = () => {
         this.setState({
             Itemcount: this.state.Itemcount - 1,
-            CartSum: this.state.CartSum - (17.24).toFixed(2),
+            CartSum: this.state.CartSum - 17.24,
         })
     }
 
     ItemAdd6 = () => {
         this.setState({
             Itemcount: this.state.Itemcount + 1,
-            CartSum: this.state.CartSum + (7.84).toFixed(2),
+            CartSum: this.state.CartSum + 7.84,
         })
     }
 
     ItemRemove6 = () => {
         this.setState({
             Itemcount: this.state.Itemcount - 1,
-            CartSum: this.state.CartSum - (7.84).toFixed(2),
+            CartSum: this.state.CartSum - 7.84,
         })
     }
 
     ItemAdd7 = () => {
         this.setState({
             Itemcount: this.state.Itemcount + 1,
-            CartSum: this.state.CartSum + (18.77).toFixed(2),
+            CartSum: this.state.CartSum + 18.77,
         })
     }
 
     ItemRemove7 = () => {
         this.setState({
             Itemcount: this.state.Itemcount - 1,
-            CartSum: this.state.CartSum - (18.77).toFixed(2),
+            CartSum: this.state.CartSum - 18.77,
         })
     }
 
     ItemAdd8 = () => {
         this.setState({
             Itemcount: this.state.Itemcount + 1,
-            CartSum: this.state.CartSum + (12.48).toFixed(2),
+            CartSum: this.state.CartSum + 12.48,
         })
     }
 
     ItemRemove8 = () => {
         this.setState({
             Itemcount: this.state.Itemcount - 1,
-            CartSum: this.state.CartSum - (12.48).toFixed(2),
+            CartSum: this.state.CartSum - 12.48,
         })
     }
+
     render() {
         return (
             <div className="App">
@@ -210,7 +164,10 @@ export default class App extends React.Component {
                                 <BsCartFill></BsCartFill>
                                 Cart{' '}
                                 <span className="CartCountStyle">
-                                    <button className="CheckoutBtnStyle">
+                                    <button
+                                        onClick={CheckoutBtn}
+                                        className="CheckoutBtnStyle"
+                                    >
                                         Pay now: ${this.state.CartSum}
                                     </button>
                                 </span>
@@ -230,41 +187,185 @@ export default class App extends React.Component {
                         <br />
                         <Routes>
                             <Route path="/HomeTab" element={<HomeTab />} />
-                            <Route
-                                path="/CheckoutTab"
-                                element={<CheckoutTab />}
-                            />
-                            <Route
-                                path="/MenuItems"
-                                element={<CheckoutTab />}
-                            />
                         </Routes>
                     </BrowserRouter>
                 </header>
                 <div>
-                    {items.map((item) => (
-                        <Container>
-                            <br />
-
-                            <li className="ListStyle col">
+                    <Container>
+                        <br />
+                        <Row>
+                            <Col md={4}>
                                 <span className="ImgStyle">
-                                    {item.pic}
-                                    <br />
+                                    <img src={item1_SPS} alt="item 1" />
                                 </span>
-                                {item.name}
-                                <br />${item.price}
-                                <br />
-                                <button onClick={this.ItemAdd1}>+</button>
-                                <span className="currentcounts">
-                                    {' '}
-                                    Add to cart{' '}
-                                </span>
-                                <button onClick={this.ItemRemove1}>-</button>
+                                <h1>Sweet Potato Salad</h1>
+                                <h2>Price: $9.64<button onClick={this.ItemAdd1}>
+                                    + <BsCartFill />
+                                </button>
+                                <button onClick={this.ItemRemove1}>-</button></h2>
+                          
                                 <hr />
-                                <br />
-                            </li>
-                        </Container>
-                    ))}
+                                <span className='RatingsTabStyle'>
+                                    Average rating: 
+                                      <AiFillStar /> <AiFillStar /> <AiFillStar />{' '}
+                                    <AiOutlineStar /> <AiOutlineStar />{' '}
+                                </span>
+                                <hr />
+                            </Col>
+                            <Col md={4}>
+                                <span className="ImgStyle">
+                                    <img src={item2_BCP} alt="item 2" />
+                                </span>
+                                <h1>Brown Crust Pizza</h1>
+                                <h2>Price: $15.35<button onClick={this.ItemAdd2}>
+                                    + <BsCartFill /> 
+                                </button>
+                                <button onClick={this.ItemRemove2}>-</button></h2>
+                                
+                                <hr />
+                                <span className='RatingsTabStyle'>
+                                    Average rating:
+                                    <AiFillStar /> <AiFillStar /> <AiFillStar />{' '}
+                                    <AiFillStar /> <AiOutlineStar />{' '}
+                                </span>
+
+                                <hr />
+                            </Col>
+                            <Col md={4}>
+                                <span className="ImgStyle">
+                                    <img src={item3_BF} alt="item 3" />
+                                </span>
+                                <h1>Mega Burger with Fries</h1>
+                                <h2>Price: $14.71<button onClick={this.ItemAdd3}>
+                                    + <BsCartFill /> 
+                                </button>
+                                <button onClick={this.ItemRemove3}>-</button></h2>
+                                
+                                <hr />
+                                <span className='RatingsTabStyle'>
+                                    Average rating:
+                                    <AiFillStar /> <AiFillStar /> <AiFillStar />{' '}
+                                    <AiFillStar /> <AiOutlineStar />{' '}
+                                </span>
+
+                                <hr />
+                            </Col>
+                        </Row>
+                        <br />
+                        <br />
+
+                        <Row>
+                            <Col md={4}>
+                                <span className="ImgStyle">
+                                    <img src={item4_CS} alt="item 4" />
+                                </span>
+                                <h1>Chips with Salsa</h1>
+                                <h2>Price: $8.15<button onClick={this.ItemAdd4}>
+                                    + <BsCartFill /> 
+                                </button>
+                                <button onClick={this.ItemRemove4}>-</button></h2>
+                                
+                                <hr />
+                                <span className='RatingsTabStyle'>
+                                    Average rating:
+                                    <AiFillStar /> <AiOutlineStar /> <AiOutlineStar />{' '}
+                                    <AiOutlineStar /> <AiOutlineStar />{' '}
+                                </span>
+
+                                <hr />
+                            </Col>
+                            <Col md={4}>
+                                <span className="ImgStyle">
+                                    <img src={item5_BN} alt="item 5" />
+                                </span>
+                                <h1>Noodles with eggs</h1>
+                                <h2>Price: $17.24<button onClick={this.ItemAdd5}>
+                                    + <BsCartFill />
+                                </button>
+                                <button onClick={this.ItemRemove5}>-</button></h2>
+                                
+                                <hr />
+                                <span className='RatingsTabStyle'>
+                                    Average rating:
+                                    <AiFillStar /> <AiFillStar /> <AiFillStar />{' '}
+                                    <AiFillStar /><AiOutlineStar />{' '}
+                                </span>
+
+                                <hr />
+                            </Col>
+                            <Col md={4}>
+                                <span className="ImgStyle">
+                                    <img src={item6_CAP} alt="item 6" />
+                                </span>
+                                <h1>Cappuccino with foam</h1>
+                                <h2>Price: $7.84 <button onClick={this.ItemAdd6}>
+                                    + <BsCartFill /> 
+                                </button>
+                                <button onClick={this.ItemRemove6}>-</button></h2>
+                                
+                                <hr />
+                                <span className='RatingsTabStyle'>
+                                    Average rating:
+                                    <AiFillStar /> <AiFillStar /> <AiFillStar />{' '}
+                                    <AiFillStar /> <AiOutlineStar />{' '}
+                                </span>
+
+                                <hr />
+                            </Col>
+                        </Row>
+
+                        <br />
+                        <br />
+
+                        <Row>
+                            <Col md={4}>
+                                <span className="ImgStyle">
+                                    <img src={item7_ENS} alt="item 7" />
+                                </span>
+                                <h1>Pasta with Broccoli</h1>
+                                <h2>Price: $18.77<button onClick={this.ItemAdd7}>
+                                    + <BsCartFill />
+                                </button>
+                                <button onClick={this.ItemRemove7}>-</button></h2>
+                                
+                                <hr />
+                                <span className='RatingsTabStyle'>
+                                    Average rating:
+                                    <AiFillStar /> <AiFillStar /> <AiFillStar />{' '}
+                                    <AiFillStar /> <AiFillStar />{' '}
+                                </span>
+
+                                <hr />
+                            </Col>
+                            <Col md={4}>
+                                <span className="ImgStyle">
+                                    <img src={item8_TE} alt="item 8" />
+                                </span>
+                                <h1>Toast with fried eggs</h1>
+                                <h2>Price: $12.48
+                                
+                                <button onClick={this.ItemAdd8}>
+                                    + <BsCartFill />
+                                </button>
+
+                                <button onClick={this.ItemRemove8}>-</button>
+                                
+                                </h2>
+                                
+                                
+                                <hr />
+                                <span className='RatingsTabStyle'>
+                                    Average rating:
+                                    <AiFillStar /> <AiFillStar /> <AiOutlineStar />{' '}
+                                    <AiOutlineStar /> <AiOutlineStar />{' '}
+                                </span>
+
+                                <hr />
+                            </Col>
+                        </Row>
+
+                        <br />
+                    </Container>
                 </div>
             </div>
         )
