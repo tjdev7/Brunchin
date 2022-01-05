@@ -4,14 +4,14 @@
 
 li {
     font-size: 2rem;
-    color: #ffffff;
+    color: #140a0a;
     display: inline;
     float: right;
     padding: 0.5rem 2rem 0rem 2rem;
 }
 
 ul {
-    background-color: orange;
+    background-color: #ffa500;
     list-style-type: none;
     margin: 0rem;
     padding: 1rem 2rem 5rem 2rem;
@@ -24,4 +24,37 @@ ul {
 button {
     font-size: 1.7rem;
     padding: 1rem;
+}
+
+.OrderBtn {
+    font-size: 1.7rem;
+    padding: 1rem;
+}
+/* 
+.CheckoutBtn {
+    
+} */
+
+.CartCountStyle {
+    font-size: 2.5rem;
+    font-weight: bold;
+    padding: 0.5rem;
+}
+
+img {
+    width: 20rem;
+    height: 15rem;
+}
+
+.ImgStyle {
+    font-size: 10rem;
+}
+
+/* .ListStyle {
+    margin: 1rem;
+} */
+
+.CheckoutBtnStyle {
+    padding: -5rem;
+    margin-top: -2rem;
 }
