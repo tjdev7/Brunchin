@@ -1,6 +1,6 @@
 {
   "name": "fodee",
-  "version": "1.4.0",
+  "version": "1.4.1",
   "homepage": "https://toughee.github.io/Fodee/",
   "private": true,
   "dependencies": {
@@ -24,7 +24,7 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "npm run build&&gh-pages -d build",
-    "codecleaner": "npx prettier --write '**/*.js'&&npx prettier --write '**/*.css'&&npx prettier --write '**/*.html'&&npx prettier --write '**/*.md'",
+    "cdncln": "npx prettier --write '**/*.js'&&npx prettier --write '**/*.css'&&npx prettier --write '**/*.html'&&npx prettier --write '**/*.md'",
     "litereport": "lighthouse http://localhost:3000/ --output json --output csv --output html --output-path tests/Lighthouse_audits/Lite.html --view | lighthouse-ci http://localhost:3000/",
     "fullpr": "git add .&&git commit&&git push&&git merge",
     "audits": "yarn install&&npm-update-all&&npm audit&&npm audit fix"
