@@ -34,7 +34,6 @@ export default class App extends React.Component {
     // if Cartsum = 0;
     // button disabled
 
-
     // Sum/Subtract Command Array for each menu item
     // Will get refactored into a more slim codebased soon
     ItemAdd1 = () => {
@@ -184,11 +183,7 @@ export default class App extends React.Component {
                             </span>
                             Items
                         </li>
-                        <li>Home</li>
 
-                        {/* <Link to="/HomeTab">
-                                <li>Home</li>
-                            </Link> */}
                     </ul>
                     <br />
                     {/* <Routes>
@@ -198,248 +193,232 @@ export default class App extends React.Component {
                 </header>
                 <div>
                     {/* Display for menu items with responsive design grid. Made using react-grid-system */}
-                    <Container>
                         <br />
-                        <Row>
-                            <Col md={4}>
+  <section>
                                 <span className="ImgStyle">
                                     <img src={item1_SPS} alt="item 1" />
-                                </span>
-                                <h1>Sweet Potato Salad</h1>
-                                <h2>
-                                    Price: $9
-                                    <button 
-                                    onClick={this.ItemAdd1}
-                                    ariaLabel={'Add Sweet Potato Salad for $9.64'}>
-                                        + <BsCartFill />
-                                    </button>
-                                    <button 
-                                    disabled ={true}
-                                    onClick={this.ItemRemove1}
-                                    ariaLabel={'Remove 1 order of Sweet Potato Salad from the cart and subtract $9.64'}>
-                                        -
-                                    </button>
-                                </h2>
-
-                                <hr />
-                                <span className="RatingsTabStyle">
-                                    Average rating:
-                                    <AiFillStar /> <AiFillStar /> <AiFillStar />{' '}
-                                    <AiOutlineStar /> <AiOutlineStar />{' '}
-                                </span>
-                                <hr />
-                            </Col>
-                            <Col md={4}>
-                                <span className="ImgStyle">
-                                    <img src={item2_BCP} alt="item 2" />
-                                </span>
-                                <h1>Brown Crust Pizza</h1>
-                                <h2>
-                                    Price: $15
-                                    <button 
-                                    onClick={this.ItemAdd2}
-                                    ariaLabel={'Add Brown Crust Pizza for $15.35'}>
-                                        + <BsCartFill />
-                                    </button>
-                                    <button 
-                                    onClick={this.ItemRemove2}
-                                    ariaLabel={'Remove 1 order of Brown Crust Pizza from the cart and subtract $15.35'}>
-                                        -
-                                    </button>
-                                </h2>
-
-                                <hr />
-                                <span className="RatingsTabStyle">
-                                    Average rating:
-                                    <AiFillStar /> <AiFillStar /> <AiFillStar />{' '}
-                                    <AiFillStar /> <AiOutlineStar />{' '}
+                                    <h1 className="ItemTitle">
+                                        Sweet Potato Salad
+                                    </h1>
                                 </span>
 
-                                <hr />
-                            </Col>
-                            <Col md={4}>
-                                <span className="ImgStyle">
-                                    <img src={item3_BF} alt="item 3" />
-                                </span>
-                                <h1>Mega Burger with Fries</h1>
-                                <h2>
-                                    Price: $14
-                                    <button onClick={this.ItemAdd3}
-                                    ariaLabel={'Add Mega Burger with Fries for $14.71'}>
-                                        + <BsCartFill />
+                            <span className="OrderTab">
+                                    <button
+                                        onClick={this.ItemAdd1}
+                                        ariaLabel={
+                                            'Add Sweet Potato Salad for $9.64'
+                                        }
+                                        className="ItemAdd"
+                                    >
+                                        +
                                     </button>
-                                    <button onClick={this.ItemRemove3}
-                                    ariaLabel={'Remove 1 order of Mega Burger with Fries  from the cart and subtract $14.71'}>
-                                        -
-                                    </button>
-                                </h2>
-
-                                <hr />
-                                <span className="RatingsTabStyle">
-                                    Average rating:
-                                    <AiFillStar /> <AiFillStar /> <AiFillStar />{' '}
-                                    <AiFillStar /> <AiOutlineStar />{' '}
-                                </span>
-
-                                <hr />
-                            </Col>
-                        </Row>
-                        <br />
-                        <br />
-
-                        <Row>
-                            <Col md={4}>
-                                <span className="ImgStyle">
-                                    <img src={item4_CS} alt="item 4" />
-                                </span>
-                                <h1>Chips with Salsa</h1>
-                                <h2>
-                                    Price: $8
-                                    <button onClick={this.ItemAdd4}
-                                    ariaLabel={'Add Chips with Salsa for $8.15'}>
-                                        + <BsCartFill />
-                                    </button>
-                                    <button onClick={this.ItemRemove4}
-                                    ariaLabel={'Remove 1 order of Chips with Salsa from the cart and subtract $8.15'}>
-                                        -
-                                    </button>
-                                </h2>
-
-                                <hr />
-                                <span className="RatingsTabStyle">
-                                    Average rating:
-                                    <AiFillStar /> <AiOutlineStar />{' '}
-                                    <AiOutlineStar /> <AiOutlineStar />{' '}
-                                    <AiOutlineStar />{' '}
-                                </span>
-
-                                <hr />
-                            </Col>
-                            <Col md={4}>
-                                <span className="ImgStyle">
-                                    <img src={item5_BN} alt="item 5" />
-                                </span>
-                                <h1>Noodles with eggs</h1>
-                                <h2>
-                                    Price: $17
-                                    <button 
-                                    onClick={this.ItemAdd5}
-                                    ariaLabel={'Add noddles with eggs for $17.24'}>
-                                        + <BsCartFill />
-                                    </button>
-                                    <button 
-                                    onClick={this.ItemRemove5}
-                                    ariaLabel={'Remove 1 order of noddles with eggs from the cart and subtract $17.24'}
+                                    ######
+                                    <button
+                                        // disabled={true}
+                                        onClick={this.ItemRemove1}
+                                        ariaLabel={
+                                            'Remove 1 order of Sweet Potato Salad from the cart and subtract $9.64'
+                                        }
+                                        className="ItemRemove"
                                     >
                                         -
                                     </button>
-                                </h2>
+                                    </span>
+                                    <hr />
+                                    </section>
 
-                                <hr />
-                                <span className="RatingsTabStyle">
-                                    Average rating:
-                                    <AiFillStar /> <AiFillStar /> <AiFillStar />{' '}
-                                    <AiFillStar />
-                                    <AiOutlineStar />{' '}
-                                </span>
 
-                                <hr />
-                            </Col>
-                            <Col md={4}>
-                                <span className="ImgStyle">
-                                    <img src={item6_CAP} alt="item 6" />
-                                </span>
-                                <h1>Cappuccino with foam</h1>
-                                <h2>
-                                    Price: $7{' '}
-                                    <button 
-                                    onClick={this.ItemAdd6}
-                                    ariaLabel={'Add Cappuccino with foam for $7.84'}>
-                                        + <BsCartFill />
-                                    </button>
-                                    <button 
-                                    onClick={this.ItemRemove6}
-                                    ariaLabel={'Remove 1 order of Cappuccino with foam from the cart and subtract $7.84'}>
-                                        -
-                                    </button>
-                                </h2>
 
-                                <hr />
-                                <span className="RatingsTabStyle">
-                                    Average rating:
-                                    <AiFillStar /> <AiFillStar /> <AiFillStar />{' '}
-                                    <AiFillStar /> <AiOutlineStar />{' '}
-                                </span>
+<section>
+                    <span className="ImgStyle">
+                        <img src={item2_BCP} alt="item 2" />
+                    </span>
+                    <h1 className="ItemTitle">Brown Crust Pizza</h1>
+                    <span className="OrderTab">         
+                        <button
+                            onClick={this.ItemAdd2}
+                            ariaLabel={'Add Brown Crust Pizza for $15.35'}
+                            className="ItemAdd"
+                        >
+                            +
+                        </button>
+                        #####
+                        <button
+                            onClick={this.ItemRemove2}
+                            ariaLabel={
+                                'Remove 1 order of Brown Crust Pizza from the cart and subtract $15.35'
+                            }
+                            className="ItemRemove"
+                        >
+                            -
+                        </button>
+                        </span>
+                        <hr />
 
-                                <hr />
-                            </Col>
-                        </Row>
+                    </section>
 
-                        <br />
-                        <br />
+                    <section>
+                    <span className="ImgStyle">
+                        <img src={item3_BF} alt="item 3" />
+                    </span>
+                    <h1 className="ItemTitle">Mega Burger with Fries</h1>
+                    <span className="OrderTab">
+                        <button
+                            onClick={this.ItemAdd3}
+                            ariaLabel={'Add Mega Burger with Fries for $14.71'}
+                            className="ItemAdd"
+                        >
+                            +
+                        </button>
+                        ######
+                        <button
+                            onClick={this.ItemRemove3}
+                            ariaLabel={
+                                'Remove 1 order of Mega Burger with Fries  from the cart and subtract $14.71'
+                            }
+                            className="ItemRemove"
+                        >
+                            -
+                        </button>
+                        </span>
+                        <hr />
 
-                        <Row>
-                            <Col md={4}>
-                                <span className="ImgStyle">
-                                    <img src={item7_ENS} alt="item 7" />
-                                </span>
-                                <h1>Pasta with Broccoli</h1>
-                                <h2>
-                                    Price: $18
-                                    <button 
-                                    onClick={this.ItemAdd7}
-                                    ariaLabel={'Add Pasta with Broccoli for $18.77'}>
-                                        + <BsCartFill />
-                                    </button>
-                                    <button 
-                                    onClick={this.ItemRemove7}
-                                    ariaLabel={'Remove 1 order of Pasta with Broccoli from the cart and subtract $18.77'}>
-                                        -
-                                    </button>
-                                </h2>
+                    </section>
+                    <section>
+                    <span className="ImgStyle">
+                        <img src={item4_CS} alt="item 4" />
+                    </span>
+                    <h1 className="ItemTitle">Chips with Salsa</h1>
+                    <span className="OrderTab">
+                        <button
+                            onClick={this.ItemAdd4}
+                            ariaLabel={'Add Chips with Salsa for $8.15'}
+                            className="ItemAdd"
+                        >
+                            +
+                        </button>
+                        #####
+                        <button
+                            onClick={this.ItemRemove4}
+                            ariaLabel={
+                                'Remove 1 order of Chips with Salsa from the cart and subtract $8.15'
+                            }
+                            className="ItemRemove"
+                        >
+                            -
+                        </button>
+                        </span>
+                        <hr />
+                        </section>
+                    <section>
+                    <span className="ImgStyle">
+                        <img src={item5_BN} alt="item 5" />
+                    </span>
+                    <h1 className="ItemTitle">Noodles with eggs</h1>
+                    <span className="OrderTab">
+                    <button
+                        onClick={this.ItemAdd5}
+                        ariaLabel={'Add noddles with eggs for $17.24'}
+                        className="ItemAdd"
+                    >
+                        +
+                    </button>
+                    #####
+                    <button
+                        onClick={this.ItemRemove5}
+                        ariaLabel={
+                            'Remove 1 order of noddles with eggs from the cart and subtract $17.24'
+                        }
+                        className="ItemRemove"
+                    >
+                        -
+                    </button>
+                    </span>
+                    <hr />
+                    </section>
+                    <section>
+                    <span className="ImgStyle">
+                        <img src={item6_CAP} alt="item 6" />
+                    </span>
+                    <h1 className="ItemTitle">Cappuccino with foam</h1>
+                    <span className="OrderTab">
+                    <button
+                        onClick={this.ItemAdd6}
+                        ariaLabel={'Add Cappuccino with foam for $7.84'}
+                        className="ItemAdd"
+                    >
+                        +
+                    </button>
+                    ######
+                    <button
+                        onClick={this.ItemRemove6}
+                        ariaLabel={
+                            'Remove 1 order of Cappuccino with foam from the cart and subtract $7.84'
+                        }
+                        className="ItemRemove"
+                    >
+                        -
+                    </button>
+                    </span>
+                    <hr />
+                    </section>
+                    <br />
+                    <section>
 
-                                <hr />
-                                <span className="RatingsTabStyle">
-                                    Average rating:
-                                    <AiFillStar /> <AiFillStar /> <AiFillStar />{' '}
-                                    <AiFillStar /> <AiFillStar />{' '}
-                                </span>
-
-                                <hr />
-                            </Col>
-                            <Col md={4}>
-                                <span className="ImgStyle">
-                                    <img src={item8_TE} alt="item 8" />
-                                </span>
-                                <h1>Toast with fried eggs</h1>
-                                <h2>
-                                    Price: $12
-                                    <button 
-                                    onClick={this.ItemAdd8}
-                                    ariaLabel={'Add Toast with fried eggs for $12.48'}>
-                                        + <BsCartFill />
-                                    </button>
-                                    <button 
-                                    onClick={this.ItemRemove8}
-                                    ariaLabel={'Remove 1 order of Toast with fried eggs from the cart and subtract $12.48'}>
-                                        -
-                                    </button>
-                                </h2>
-
-                                <hr />
-                                <span className="RatingsTabStyle">
-                                    Average rating:
-                                    <AiFillStar /> <AiFillStar />{' '}
-                                    <AiOutlineStar /> <AiOutlineStar />{' '}
-                                    <AiOutlineStar />{' '}
-                                </span>
-
-                                <hr />
-                            </Col>
-                        </Row>
-
-                        <br />
-                    </Container>
+                        <span className="ImgStyle">
+                            <img src={item7_ENS} alt="item 7" />
+                        </span>
+                        <h1 className="ItemTitle">Pasta with Broccoli</h1>
+                        <span className="OrderTab">
+                        <button
+                            onClick={this.ItemAdd7}
+                            ariaLabel={'Add Pasta with Broccoli for $18.77'}
+                            className="ItemAdd"
+                        >
+                            +
+                        </button>
+                        ####
+                        <button
+                            onClick={this.ItemRemove7}
+                            ariaLabel={
+                                'Remove 1 order of Pasta with Broccoli from the cart and subtract $18.77'
+                            }
+                            className="ItemRemove"
+                        >
+                            -
+                        </button>
+                        </span>
+                        <hr />
+                    </section>
+                    <br />
+                    <br />
+                    <section>
+                        <span className="ImgStyle">
+                            <img src={item8_TE} alt="item 8" />
+                        </span>
+                        <h1 className="ItemTitle">Toast with fried eggs</h1>
+                        <span className="OrderTab">
+                        <button
+                            onClick={this.ItemAdd8}
+                            ariaLabel={'Add Toast with fried eggs for $12.48'}
+                            className="ItemAdd"
+                        >
+                            +
+                        </button>
+                        ####
+                        <button
+                            onClick={this.ItemRemove8}
+                            ariaLabel={
+                                'Remove 1 order of Toast with fried eggs from the cart and subtract $12.48'
+                            }
+                            className="ItemRemove"
+                        >
+                            -
+                        </button>
+                        </span>
+                        <hr />
+                    </section>
+                    <br />
                 </div>
             </div>
         )

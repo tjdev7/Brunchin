@@ -37,8 +37,8 @@ button {
 }
 
 img {
-    width: 28rem;
-    height: 20rem;
+    width: 12rem;
+    height: 10rem;
     border: 5px solid #ffa500;
 }
 
@@ -60,10 +60,10 @@ button {
 Font style 
 ---------------------------------------------------
 */
-h1 {
+.ItemTitle {
     font-family: 'Poiret One', cursive;
     font-weight: bold;
-    font-size: 2.7rem;
+    font-size: 1.5rem;
 }
 
 .RatingsTabStyle {
@@ -83,3 +83,24 @@ possible new style for menu items
     background-color: #aca9a9;
     padding: 2rem;
 } */
+
+.ItemAdd {
+    border: 3px solid rgba(6, 255, 6, 0.774);
+}
+
+.ItemRemove {
+    border: 3px solid rgba(255, 30, 30, 0.787);
+}
+
+.ItemAdd,
+.ItemRemove {
+    background: #ffffff;
+    cursor: pointer;
+    font-size: 2rem;
+    padding: 1.5rem;
+}
+
+.OrderTab {
+    background-color: #d3d3d3;
+    padding: 2rem 0.5rem 1.7rem 0rem;
+}
