@@ -31,7 +31,7 @@ Proof of concept: This app was created as an example of React state, regular exp
 ### Completed app tasks:
 
 -   [x] Include CircleCI and Travis-CI inside project
--   [x] Improve U.I. design for app4
+-   [x] Improve U.I. design for app
 -   [x] Perfect U.X. design for app
 -   [x] Working checkout button for item and cart total
 
