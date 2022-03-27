@@ -31,14 +31,10 @@ Proof of concept: This app was created as an example of React state, regular exp
 ### Completed app tasks:
 
 -   [x] Include CircleCI and Travis-CI inside project
--   [x] Improve U.I. design for app4
+-   [x] Improve U.I. design for app
 -   [x] Perfect U.X. design for app
 -   [x] Working checkout button for item and cart total
 
 ### Future app goals:
 
--   [ ] Fix addition error with float number where sum shows dozens of numbers after float period (example: cart sum shows up as $32.2000000000 instead of fixed amount)
--   [ ] Include boolean conditionals that show data when cart is active or not
--   [ ] Fix subtraction error where numbers keep subtracting from each state even as state has 0 values inside of it. (example: cart goes negative when remove button is pressed after no item and cart sum is at 0)
--   [ ] Disable remove button for each item when no item is in cart
 -   [ ] Refactor code and cut code volume. Divive the majority of UI elements into smaller components
