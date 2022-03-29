@@ -37,4 +37,4 @@ Proof of concept: This app was created as an example of React state, regular exp
 
 ### Future app goals:
 
--   [ ] Refactor code and cut code volume. Divive the majority of UI elements into smaller components
+-   [ ] Refactor code and cut code volume. Divive the majority of UI elements into smaller and separate React components
