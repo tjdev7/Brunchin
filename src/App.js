@@ -10,7 +10,6 @@ import { Container, Row, Col } from 'react-grid-system'
 
 import HomeTab from './components/HomeTab'
 
-// Drafts for eventual seperated UI components
 // import MenuItems from './components/MenuItems'
 // import CheckoutTab from './components/CheckoutTab'
 
@@ -32,12 +31,6 @@ export default class App extends React.Component {
         this.handleClick = this.handleClick.bind(this)
     }
 
-    // const =
-    // if Cartsum = 0;
-    // button disabled
-
-    // Sum/Subtract Command Array for each menu item
-    // Will get refactored into a more slim codebased soon
     ItemAdd1 = () => {
         this.setState({
             Itemcount: this.state.Itemcount + 1,
@@ -149,12 +142,10 @@ export default class App extends React.Component {
             CartSum: this.state.CartSum - 12,
         })
     }
-    // resets cart and item count back to 0
     handleClick() {
         this.setState({ Itemcount: 0, CartSum: 0 })
         alert('Your order has been made')
 
-        // Draft for conditional
         // if (Itemcount = 0)
         //     return alert('test')
     }
@@ -163,7 +154,6 @@ export default class App extends React.Component {
         return (
             <div className="App">
                 <header>
-                    {/* <BrowserRouter> */}
                     <ul>
                         <li>
                             {/* {' '}
@@ -188,24 +178,17 @@ export default class App extends React.Component {
                         </li>
                     </ul>
                     <br />
-                    {/* <Routes>
-                            <Route path="/HomeTab" element={<HomeTab />} />
-                        </Routes> */}
-                    {/* </BrowserRouter> */}
                 </header>
                 <div>
-                    {/* Display for menu items with responsive design grid. Made using react-grid-system */}
                     <br />
                     <section className="ItemTab">
                         <span className="ImgStyle">
                             <img src={item1_SPS} alt="item 1" />
                             <h1 className="ItemTitle">Sweet Potato Salad</h1>
-
-                            <p className="Adding">Add to cart</p>
                         </span>
-                        <br />
 
                         <span className="OrderTab">
+                            <span className="Adding">Add to cart </span>
                             <button
                                 onClick={this.ItemAdd1}
                                 ariaLabel={'Add Sweet Potato Salad for $9.64'}
@@ -215,7 +198,6 @@ export default class App extends React.Component {
                             </button>
                             <span className="ItemCountCurrent">0</span>
                             <button
-                                // disabled={true}
                                 onClick={this.ItemRemove1}
                                 ariaLabel={
                                     'Remove 1 order of Sweet Potato Salad from the cart and subtract $9.64'
@@ -232,9 +214,9 @@ export default class App extends React.Component {
                             <img src={item2_BCP} alt="item 2" />
                         </span>
                         <h1 className="ItemTitle">Brown Crust Pizza</h1>
-                        <p className="Adding">Add to cart</p>
-                        <br />
+
                         <span className="OrderTab">
+                            <span className="Adding">Add to cart</span>
                             <button
                                 onClick={this.ItemAdd2}
                                 ariaLabel={'Add Brown Crust Pizza for $15.35'}
@@ -260,9 +242,9 @@ export default class App extends React.Component {
                             <img src={item3_BF} alt="item 3" />
                         </span>
                         <h1 className="ItemTitle">Mega Burger with Fries</h1>
-                        <p className="Adding">Add to cart</p>
 
                         <span className="OrderTab">
+                            <span className="Adding">Add to cart</span>
                             <button
                                 onClick={this.ItemAdd3}
                                 ariaLabel={
@@ -289,9 +271,9 @@ export default class App extends React.Component {
                             <img src={item4_CS} alt="item 4" />
                         </span>
                         <h1 className="ItemTitle">Chips with Salsa</h1>
-                        <p className="Adding">Add to cart</p>
-                        <br />
+
                         <span className="OrderTab">
+                            <span className="Adding">Add to cart </span>
                             <button
                                 onClick={this.ItemAdd4}
                                 ariaLabel={'Add Chips with Salsa for $8.15'}
@@ -316,9 +298,9 @@ export default class App extends React.Component {
                             <img src={item5_BN} alt="item 5" />
                         </span>
                         <h1 className="ItemTitle">Noodles with eggs</h1>
-                        <p className="Adding">Add to cart</p>
 
                         <span className="OrderTab">
+                            <span className="Adding">Add to cart </span>
                             <button
                                 onClick={this.ItemAdd5}
                                 ariaLabel={'Add noddles with eggs for $17.24'}
@@ -343,9 +325,9 @@ export default class App extends React.Component {
                             <img src={item6_CAP} alt="item 6" />
                         </span>
                         <h1 className="ItemTitle">Cappuccino with foam</h1>
-                        <p className="Adding">Add to cart</p>
-                        <br />
+
                         <span className="OrderTab">
+                            <span className="Adding">Add to cart </span>
                             <button
                                 onClick={this.ItemAdd6}
                                 ariaLabel={'Add Cappuccino with foam for $7.84'}
@@ -371,8 +353,9 @@ export default class App extends React.Component {
                             <img src={item7_ENS} alt="item 7" />
                         </span>
                         <h1 className="ItemTitle">Pasta with Broccoli</h1>
-                        <p className="Adding">Add to cart</p>
+
                         <span className="OrderTab">
+                            <span className="Adding">Add to cart </span>
                             <button
                                 onClick={this.ItemAdd7}
                                 ariaLabel={'Add Pasta with Broccoli for $18.77'}
@@ -399,9 +382,9 @@ export default class App extends React.Component {
                         </span> */}
                         <img src={item8_TE} alt="item 8" />
                         <h1 className="ItemTitle">Toast with fried eggs</h1>
-                        <p className="Adding">Add to cart</p>
 
                         <span className="OrderTab">
+                            <span className="Adding">Add to cart </span>
                             <button
                                 onClick={this.ItemAdd8}
                                 ariaLabel={
