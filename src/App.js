@@ -1,14 +1,14 @@
 import React from 'react'
 
 import 'bulma/css/bulma.min.css'
-import { BsCartFill } from 'react-icons/bs'
-import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
+// import { BsCartFill } from 'react-icons/bs'
+// import { BrowserRouter, Route, Routes, Link } from 'react-router-dom'
 
-import { AiOutlineStar, AiFillStar } from 'react-icons/ai'
+// import { AiOutlineStar, AiFillStar } from 'react-icons/ai'
 
-import { Container, Row, Col } from 'react-grid-system'
+// import { Container, Row, Col } from 'react-grid-system'
 
-import HomeTab from './components/HomeTab'
+// import HomeTab from './components/HomeTab'
 
 // import MenuItems from './components/MenuItems'
 // import CheckoutTab from './components/CheckoutTab'
@@ -26,7 +26,7 @@ import './App.css'
 export default class App extends React.Component {
     constructor(props) {
         super(props)
-        this.state = { Itemcount: 0, CartSum: 0 }
+        this.state = { Itemcount: 0, CartSum: 0, Item1: 0, Item2: 0, Item3: 0, Item4: 0, Item5: 0, Item6: 0, Item7: 0, Item8: 0  }
 
         this.handleClick = this.handleClick.bind(this)
     }
@@ -35,6 +35,7 @@ export default class App extends React.Component {
         this.setState({
             Itemcount: this.state.Itemcount + 1,
             CartSum: this.state.CartSum + 9,
+            Item1: this.state.Item1 + 1
         })
     }
 
@@ -42,6 +43,7 @@ export default class App extends React.Component {
         this.setState({
             Itemcount: this.state.Itemcount - 1,
             CartSum: this.state.CartSum - 9,
+            Item1: this.state.Item1 - 1
         })
     }
 
@@ -49,6 +51,7 @@ export default class App extends React.Component {
         this.setState({
             Itemcount: this.state.Itemcount + 1,
             CartSum: this.state.CartSum + 15,
+            Item2: this.state.Item2 + 1
         })
     }
 
@@ -56,6 +59,7 @@ export default class App extends React.Component {
         this.setState({
             Itemcount: this.state.Itemcount - 1,
             CartSum: this.state.CartSum - 15,
+            Item2: this.state.Item2 - 1
         })
     }
 
@@ -63,6 +67,7 @@ export default class App extends React.Component {
         this.setState({
             Itemcount: this.state.Itemcount + 1,
             CartSum: this.state.CartSum + 14,
+            Item3: this.state.Item3 + 1
         })
     }
 
@@ -70,6 +75,7 @@ export default class App extends React.Component {
         this.setState({
             Itemcount: this.state.Itemcount - 1,
             CartSum: this.state.CartSum - 14,
+            Item3: this.state.Item3 - 1
         })
     }
 
@@ -77,6 +83,7 @@ export default class App extends React.Component {
         this.setState({
             Itemcount: this.state.Itemcount + 1,
             CartSum: this.state.CartSum + 8,
+            Item4: this.state.Item4 + 1
         })
     }
 
@@ -84,6 +91,7 @@ export default class App extends React.Component {
         this.setState({
             Itemcount: this.state.Itemcount - 1,
             CartSum: this.state.CartSum - 8,
+            Item4: this.state.Item4 - 1
         })
     }
 
@@ -91,6 +99,7 @@ export default class App extends React.Component {
         this.setState({
             Itemcount: this.state.Itemcount + 1,
             CartSum: this.state.CartSum + 17,
+            Item5: this.state.Item5 + 1
         })
     }
 
@@ -98,6 +107,7 @@ export default class App extends React.Component {
         this.setState({
             Itemcount: this.state.Itemcount - 1,
             CartSum: this.state.CartSum - 17,
+            Item5: this.state.Item5 - 1
         })
     }
 
@@ -105,6 +115,7 @@ export default class App extends React.Component {
         this.setState({
             Itemcount: this.state.Itemcount + 1,
             CartSum: this.state.CartSum + 7,
+            Item6: this.state.Item6 + 1
         })
     }
 
@@ -112,6 +123,7 @@ export default class App extends React.Component {
         this.setState({
             Itemcount: this.state.Itemcount - 1,
             CartSum: this.state.CartSum - 7,
+            Item6: this.state.Item6 - 1
         })
     }
 
@@ -119,6 +131,7 @@ export default class App extends React.Component {
         this.setState({
             Itemcount: this.state.Itemcount + 1,
             CartSum: this.state.CartSum + 18,
+            Item7: this.state.Item7 + 1
         })
     }
 
@@ -126,6 +139,7 @@ export default class App extends React.Component {
         this.setState({
             Itemcount: this.state.Itemcount - 1,
             CartSum: this.state.CartSum - 18,
+            Item7: this.state.Item7 - 1
         })
     }
 
@@ -133,6 +147,7 @@ export default class App extends React.Component {
         this.setState({
             Itemcount: this.state.Itemcount + 1,
             CartSum: this.state.CartSum + 12,
+            Item8: this.state.Item8 + 1
         })
     }
 
@@ -140,14 +155,13 @@ export default class App extends React.Component {
         this.setState({
             Itemcount: this.state.Itemcount - 1,
             CartSum: this.state.CartSum - 12,
+            Item8: this.state.Item8 - 1
         })
     }
     handleClick() {
-        this.setState({ Itemcount: 0, CartSum: 0 })
+        this.setState({ Itemcount: 0, CartSum: 0, Item1: 0, Item2: 0, Item3: 0, Item4: 0, Item5: 0, Item6: 0, Item7: 0, Item8: 0  })
         alert('Your order has been made')
 
-        // if (Itemcount = 0)
-        //     return alert('test')
     }
 
     render() {
@@ -162,7 +176,7 @@ export default class App extends React.Component {
                             <span className="CartCountStyle">
                                 <button
                                     onClick={this.handleClick}
-                                    className="CheckoutBtnStyle "
+                                    className="CheckoutBtnStyle button is-large"
                                 >
                                     Checkout now
                                     {/* Pay now: ${this.state.CartSum} */}
@@ -170,12 +184,12 @@ export default class App extends React.Component {
                             </span>
                         </li>
 
-                        <li>
+                        {/* <li>
                             <span className="CartCountStyle">
                                 {this.state.Itemcount}
                             </span>
                             Items
-                        </li>
+                        </li> */}
                     </ul>
                     <br />
                 </header>
@@ -196,7 +210,7 @@ export default class App extends React.Component {
                             >
                                 +
                             </button>
-                            <span className="ItemCountCurrent">0</span>
+                            <span className="ItemCountCurrent">{this.state.Item1}</span>
                             <button
                                 onClick={this.ItemRemove1}
                                 ariaLabel={
@@ -224,7 +238,7 @@ export default class App extends React.Component {
                             >
                                 +
                             </button>
-                            <span className="ItemCountCurrent">0</span>
+                            <span className="ItemCountCurrent">{this.state.Item2}</span>
                             <button
                                 onClick={this.ItemRemove2}
                                 ariaLabel={
@@ -254,7 +268,7 @@ export default class App extends React.Component {
                             >
                                 +
                             </button>
-                            <span className="ItemCountCurrent">0</span>
+                            <span className="ItemCountCurrent">{this.state.Item3}</span>
                             <button
                                 onClick={this.ItemRemove3}
                                 ariaLabel={
@@ -281,7 +295,7 @@ export default class App extends React.Component {
                             >
                                 +
                             </button>
-                            <span className="ItemCountCurrent">0</span>
+                            <span className="ItemCountCurrent">{this.state.Item4}</span>
                             <button
                                 onClick={this.ItemRemove4}
                                 ariaLabel={
@@ -308,7 +322,7 @@ export default class App extends React.Component {
                             >
                                 +
                             </button>
-                            <span className="ItemCountCurrent">0</span>
+                            <span className="ItemCountCurrent">{this.state.Item5}</span>
                             <button
                                 onClick={this.ItemRemove5}
                                 ariaLabel={
@@ -335,7 +349,7 @@ export default class App extends React.Component {
                             >
                                 +
                             </button>
-                            <span className="ItemCountCurrent">0</span>
+                            <span className="ItemCountCurrent">{this.state.Item6}</span>
                             <button
                                 onClick={this.ItemRemove6}
                                 ariaLabel={
@@ -363,7 +377,7 @@ export default class App extends React.Component {
                             >
                                 +
                             </button>
-                            <span className="ItemCountCurrent">0</span>
+                            <span className="ItemCountCurrent">{this.state.Item7}</span>
                             <button
                                 onClick={this.ItemRemove7}
                                 ariaLabel={
@@ -384,7 +398,7 @@ export default class App extends React.Component {
                         <h1 className="ItemTitle">Toast with fried eggs</h1>
 
                         <span className="OrderTab">
-                            <span className="Adding">Add to cart </span>
+                            <span className="Adding">$147.22 </span>
                             <button
                                 onClick={this.ItemAdd8}
                                 ariaLabel={
@@ -394,7 +408,7 @@ export default class App extends React.Component {
                             >
                                 +
                             </button>
-                            <span className="ItemCountCurrent">0</span>
+                            <span className="ItemCountCurrent">{this.state.Item8}</span>
                             <button
                                 onClick={this.ItemRemove8}
                                 ariaLabel={
@@ -404,6 +418,7 @@ export default class App extends React.Component {
                             >
                                 -
                             </button>
+                            <span className="Adding">Add to cart </span>
                         </span>
                     </section>
                     <br />
