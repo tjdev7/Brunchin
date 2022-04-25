@@ -41,126 +41,131 @@ export default class App extends React.Component {
 
     ItemRemove1 = () => {
         this.setState({
-            Itemcount: this.state.Itemcount - 1,
-            CartSum: this.state.CartSum - 9,
+            // Itemcount: this.state.Itemcount - 1,
+            // CartSum: this.state.CartSum - 9,
             Item1: this.state.Item1 - 1
         })
     }
 
     ItemAdd2 = () => {
         this.setState({
-            Itemcount: this.state.Itemcount + 1,
-            CartSum: this.state.CartSum + 15,
+            // Itemcount: this.state.Itemcount + 1,
+            // CartSum: this.state.CartSum + 15,
             Item2: this.state.Item2 + 1
         })
     }
 
     ItemRemove2 = () => {
         this.setState({
-            Itemcount: this.state.Itemcount - 1,
-            CartSum: this.state.CartSum - 15,
+            // Itemcount: this.state.Itemcount - 1,
+            // CartSum: this.state.CartSum - 15,
             Item2: this.state.Item2 - 1
         })
     }
 
     ItemAdd3 = () => {
         this.setState({
-            Itemcount: this.state.Itemcount + 1,
-            CartSum: this.state.CartSum + 14,
+            // Itemcount: this.state.Itemcount + 1,
+            // CartSum: this.state.CartSum + 14,
             Item3: this.state.Item3 + 1
         })
     }
 
     ItemRemove3 = () => {
         this.setState({
-            Itemcount: this.state.Itemcount - 1,
-            CartSum: this.state.CartSum - 14,
+            // Itemcount: this.state.Itemcount - 1,
+            // CartSum: this.state.CartSum - 14,
             Item3: this.state.Item3 - 1
         })
     }
 
     ItemAdd4 = () => {
         this.setState({
-            Itemcount: this.state.Itemcount + 1,
-            CartSum: this.state.CartSum + 8,
+            // Itemcount: this.state.Itemcount + 1,
+            // CartSum: this.state.CartSum + 8,
             Item4: this.state.Item4 + 1
         })
     }
 
     ItemRemove4 = () => {
         this.setState({
-            Itemcount: this.state.Itemcount - 1,
-            CartSum: this.state.CartSum - 8,
+            // Itemcount: this.state.Itemcount - 1,
+            // CartSum: this.state.CartSum - 8,
             Item4: this.state.Item4 - 1
         })
     }
 
     ItemAdd5 = () => {
         this.setState({
-            Itemcount: this.state.Itemcount + 1,
-            CartSum: this.state.CartSum + 17,
+            // Itemcount: this.state.Itemcount + 1,
+            // CartSum: this.state.CartSum + 17,
             Item5: this.state.Item5 + 1
         })
     }
 
     ItemRemove5 = () => {
         this.setState({
-            Itemcount: this.state.Itemcount - 1,
-            CartSum: this.state.CartSum - 17,
+            // Itemcount: this.state.Itemcount - 1,
+            // CartSum: this.state.CartSum - 17,
             Item5: this.state.Item5 - 1
         })
     }
 
     ItemAdd6 = () => {
         this.setState({
-            Itemcount: this.state.Itemcount + 1,
-            CartSum: this.state.CartSum + 7,
+            // Itemcount: this.state.Itemcount + 1,
+            // CartSum: this.state.CartSum + 7,
             Item6: this.state.Item6 + 1
         })
     }
 
     ItemRemove6 = () => {
         this.setState({
-            Itemcount: this.state.Itemcount - 1,
-            CartSum: this.state.CartSum - 7,
+            // Itemcount: this.state.Itemcount - 1,
+            // CartSum: this.state.CartSum - 7,
             Item6: this.state.Item6 - 1
         })
     }
 
     ItemAdd7 = () => {
         this.setState({
-            Itemcount: this.state.Itemcount + 1,
-            CartSum: this.state.CartSum + 18,
+            // Itemcount: this.state.Itemcount + 1,
+            // CartSum: this.state.CartSum + 18,
             Item7: this.state.Item7 + 1
         })
     }
 
     ItemRemove7 = () => {
         this.setState({
-            Itemcount: this.state.Itemcount - 1,
-            CartSum: this.state.CartSum - 18,
+            // Itemcount: this.state.Itemcount - 1,
+            // CartSum: this.state.CartSum - 18,
             Item7: this.state.Item7 - 1
         })
     }
 
     ItemAdd8 = () => {
         this.setState({
-            Itemcount: this.state.Itemcount + 1,
-            CartSum: this.state.CartSum + 12,
+            // Itemcount: this.state.Itemcount + 1,
+            // CartSum: this.state.CartSum + 12,
             Item8: this.state.Item8 + 1
         })
     }
 
     ItemRemove8 = () => {
         this.setState({
-            Itemcount: this.state.Itemcount - 1,
-            CartSum: this.state.CartSum - 12,
+            // Itemcount: this.state.Itemcount - 1,
+            // CartSum: this.state.CartSum - 12,
             Item8: this.state.Item8 - 1
         })
     }
     handleClick() {
         this.setState({ Itemcount: 0, CartSum: 0, Item1: 0, Item2: 0, Item3: 0, Item4: 0, Item5: 0, Item6: 0, Item7: 0, Item8: 0  })
-        alert('Your order has been made')
+        // if (Item1 = 0) {
+        //     alert('Please add items to your cart before doing a checkout')
+        // } else {
+            alert('Your order has been made')
+        // }
+        
 
     }
 
