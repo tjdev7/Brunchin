@@ -42,9 +42,14 @@ button {
     padding: 0.5rem;
 }
 
+.CartIcon {
+    font-size: 1.7rem;
+    padding: 0.8rem;
+}
+
 img {
-    width: 45rem;
-    height: 30.5rem;
+    width: 22rem;
+    height: 17rem;
     border: 5px solid #ffa500;
     /* padding: 0.5rem; */
 }
@@ -64,10 +69,12 @@ button {
 }
 
 .ItemTab {
+    text-align: center;
     padding: 1rem;
     margin: 2rem;
     background-color: #dfdfdf;
     border-radius: 1%;
+    width: 27rem;
 }
 
 /*
@@ -78,16 +85,11 @@ Font style
 .ItemTitle {
     font-family: 'Poiret One', cursive;
     font-weight: bold;
-    font-size: 5.5rem;
-}
-
-.RatingsTabStyle {
-    font-family: 'Michroma', sans-serif;
-    font-size: 1.5rem;
+    font-size: 3.7rem;
 }
 
 .Adding {
-    font-size: 4rem;
+    font-size: 2.7rem;
     padding-bottom: 2rem;
 }
 
@@ -96,26 +98,10 @@ h2 {
     font-size: 2rem;
 }
 
-/*
-possible new style for menu items
-*/
-/* .ItemPanelStyle {
-    background-color: #aca9a9;
-    padding: 2rem;
-} */
-
 .ItemCountCurrent {
     font-size: 4.2rem;
     padding: 2rem;
 }
-
-/* .ItemAdd {
-    border: 3px solid rgba(6, 255, 6, 0.774);
-}
-
-.ItemRemove {
-    border: 3px solid rgba(255, 30, 30, 0.787);
-} */
 
 .ItemAdd,
 .ItemRemove {
@@ -128,3 +114,30 @@ possible new style for menu items
 .OrderTab {
     padding: 0rem;
 }
+
+/*
+--------------------------------------------------
+            Unused css
+---------------------------------------------------
+*/
+
+/* .RatingsTabStyle {
+    font-family: 'Michroma', sans-serif;
+    font-size: 1.5rem;
+} */
+
+/* .ItemAdd {
+    border: 3px solid rgba(6, 255, 6, 0.774);
+}
+
+.ItemRemove {
+    border: 3px solid rgba(255, 30, 30, 0.787);
+} */
+
+/*
+possible new style for menu items
+*/
+/* .ItemPanelStyle {
+    background-color: #aca9a9;
+    padding: 2rem;
+} */

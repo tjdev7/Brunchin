@@ -30,11 +30,14 @@ Proof of concept: This app was created as an example of React state, regular exp
 
 ### Completed app tasks:
 
--   [x] Include CircleCI and Travis-CI inside project
--   [x] Improve U.I. design for app
--   [x] Perfect U.X. design for app
--   [x] Working checkout button for item and cart total
+- [x] Include CircleCI and Travis-CI inside project
+- [x] Improve UI and UX design for app
+- [x] Perfect UI and UX design for app
+- [x] Make app responsive for the majority of user platforms
+- [x] Working checkout button for item and cart total
 
 ### Future app goals:
 
--   [ ] Refactor code and cut code volume. Divive the majority of UI elements into smaller and separate React components
+- [ ] Refactor code and cut code volume. Divide all components into smaller and separate React components
+
+- [ ] Make the checkout option become visible only if one item is in each item inside the food menu
