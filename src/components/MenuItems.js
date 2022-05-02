@@ -2,53 +2,20 @@ import React from 'react'
 
 import { FaShoppingCart } from 'react-icons/fa'
 
-import item1_SPS from './assets/item1_SPS.png'
-import item2_BCP from './assets/item2_BCP.png'
-import item3_BF from './assets/item3_BF.png'
-import item4_CS from './assets/item4_CS.png'
-import item5_BN from './assets/item5_BN.png'
-import item6_CAP from './assets/item6_CAP.png'
-import item7_ENS from './assets/item7_ENS.png'
-import item8_TE from './assets/item8_TE.png'
-import item9_Sm from './assets/item9_Sm.png'
+import item1_SPS from '../assets/item1_SPS.png'
+import item2_BCP from '../assets/item2_BCP.png'
+import item3_BF from '../assets/item3_BF.png'
+import item4_CS from '../assets/item4_CS.png'
+import item5_BN from '../assets/item5_BN.png'
+import item6_CAP from '../assets/item6_CAP.png'
+import item7_ENS from '../assets/item7_ENS.png'
+import item8_TE from '../assets/item8_TE.png'
+import item9_Sm from '../assets/item9_Sm.png'
 
 export default class MenuItems extends React.Component {
     render() {
         return (
             <div className="App">
-                <header>
-                    <ul>
-                        <li>
-                            <span className="CartCountStyle">
-                                {/* {this.state.Itemcount} items */}
-
-                                {/* <button
-                                    disabled
-                                    className="CheckoutBtnStyle button is-large is-black is-rounded"
-                                >
-                                    <span className="CartIcon">
-                                        <FaShoppingCart />
-                                    </span>
-                                    Checkout now
-                                </button> */}
-
-                                {this.state.Item4 !== 0 && (
-                                    <button
-                                        onClick={this.handleClick}
-                                        className="CheckoutBtnStyle button is-large is-black is-rounded"
-                                    >
-                                        <span className="CartIcon">
-                                            <FaShoppingCart />
-                                        </span>
-                                        Checkout now
-                                    </button>
-                                )}
-                            </span>
-                        </li>
-                    </ul>
-                    <br />
-                </header>
-
                 <div className="container">
                     {/* <main className="row">
                         <br />
