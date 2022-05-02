@@ -35,9 +35,11 @@ Proof of concept: This app was created as an example of React state, regular exp
 - [x] Perfect UI and UX design for app
 - [x] Make app responsive for the majority of user platforms
 - [x] Working checkout button for item and cart total
+- [x] Make the checkout option become visible only if one item is in each item inside the food menu
+
 
 ### Future app goals:
 
 - [ ] Refactor code and cut code volume. Divide all components into smaller and separate React components
+- [ ] Add modal display after checkout is done
 
-- [ ] Make the checkout option become visible only if one item is in each item inside the food menu

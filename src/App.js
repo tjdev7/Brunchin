@@ -15,6 +15,8 @@ import item7_ENS from './assets/item7_ENS.png'
 import item8_TE from './assets/item8_TE.png'
 import item9_Sm from './assets/item9_Sm.png'
 
+import MenuItems from './components/MenuItems.js'
+
 import './App.css'
 export default class App extends React.Component {
     constructor(props) {
@@ -39,111 +41,127 @@ export default class App extends React.Component {
     ItemAdd1 = () => {
         this.setState({
             Itemcount: this.state.Itemcount + 1,
-            // CartSum: this.state.CartSum + 9,
             Item1: this.state.Item1 + 1,
         })
     }
 
     ItemRemove1 = () => {
-        if (this.state.Item1 > 0) {
-            this.setState((lastState) => ({ Item1: lastState.Item1 - 1 }))
-        }
+        this.setState({
+            Item1: this.state.Item1 - 1,
+            Itemcount: this.state.Itemcount - 1,
+        })
     }
 
     ItemAdd2 = () => {
         this.setState({
             Item2: this.state.Item2 + 1,
+            Itemcount: this.state.Itemcount + 1,
         })
     }
 
     ItemRemove2 = () => {
-        if (this.state.Item2 > 0) {
-            this.setState((lastState) => ({ Item2: lastState.Item2 - 1 }))
-        }
+        this.setState({
+            Item2: this.state.Item2 - 1,
+            Itemcount: this.state.Itemcount - 1,
+        })
     }
 
     ItemAdd3 = () => {
         this.setState({
             Item3: this.state.Item3 + 1,
+            Itemcount: this.state.Itemcount + 1,
         })
     }
 
     ItemRemove3 = () => {
-        if (this.state.Item3 > 0) {
-            this.setState((lastState) => ({ Item3: lastState.Item3 - 1 }))
-        }
+        this.setState({
+            Item3: this.state.Item3 - 1,
+            Itemcount: this.state.Itemcount - 1,
+        })
     }
 
     ItemAdd4 = () => {
         this.setState({
             Item4: this.state.Item4 + 1,
+            Itemcount: this.state.Itemcount + 1,
         })
     }
 
     ItemRemove4 = () => {
-        if (this.state.Item4 > 0) {
-            this.setState((lastState) => ({ Item4: lastState.Item4 - 1 }))
-        }
+        this.setState({
+            Item4: this.state.Item4 - 1,
+            Itemcount: this.state.Itemcount - 1,
+        })
     }
 
     ItemAdd5 = () => {
         this.setState({
             Item5: this.state.Item5 + 1,
+            Itemcount: this.state.Itemcount + 1,
         })
     }
 
     ItemRemove5 = () => {
-        if (this.state.Item5 > 0) {
-            this.setState((lastState) => ({ Item5: lastState.Item5 - 1 }))
-        }
+        this.setState({
+            Item5: this.state.Item5 - 1,
+            Itemcount: this.state.Itemcount - 1,
+        })
     }
 
     ItemAdd6 = () => {
         this.setState({
             Item6: this.state.Item6 + 1,
+            Itemcount: this.state.Itemcount + 1,
         })
     }
 
     ItemRemove6 = () => {
-        if (this.state.Item6 > 0) {
-            this.setState((lastState) => ({ Item6: lastState.Item6 - 1 }))
-        }
+        this.setState({
+            Item6: this.state.Item6 - 1,
+            Itemcount: this.state.Itemcount - 1,
+        })
     }
 
     ItemAdd7 = () => {
         this.setState({
             Item7: this.state.Item7 + 1,
+            Itemcount: this.state.Itemcount + 1,
         })
     }
 
     ItemRemove7 = () => {
-        if (this.state.Item7 > 0) {
-            this.setState((lastState) => ({ Item7: lastState.Item7 - 1 }))
-        }
+        this.setState({
+            Item7: this.state.Item7 - 1,
+            Itemcount: this.state.Itemcount - 1,
+        })
     }
 
     ItemAdd8 = () => {
         this.setState({
             Item8: this.state.Item8 + 1,
+            Itemcount: this.state.Itemcount + 1,
         })
     }
 
     ItemRemove8 = () => {
-        if (this.state.Item8 > 0) {
-            this.setState((lastState) => ({ Item8: lastState.Item8 - 1 }))
-        }
+        this.setState({
+            Item8: this.state.Item8 - 1,
+            Itemcount: this.state.Itemcount - 1,
+        })
     }
 
     ItemAdd9 = () => {
         this.setState({
             Item9: this.state.Item9 + 1,
+            Itemcount: this.state.Itemcount + 1,
         })
     }
 
     ItemRemove9 = () => {
-        if (this.state.Item9 > 0) {
-            this.setState((lastState) => ({ Item9: lastState.Item9 - 1 }))
-        }
+        this.setState({
+            Item9: this.state.Item9 - 1,
+            Itemcount: this.state.Itemcount - 1,
+        })
     }
 
     handleClick() {
@@ -160,7 +178,6 @@ export default class App extends React.Component {
             Item8: 0,
             Item9: 0,
         })
-        alert('Your order has been made')
     }
 
     render() {
@@ -170,19 +187,14 @@ export default class App extends React.Component {
                     <ul>
                         <li>
                             <span className="CartCountStyle">
-                                {/* {this.state.Itemcount} items */}
-
-                                {/* <button
-                                    disabled
-                                    className="CheckoutBtnStyle button is-large is-black is-rounded"
-                                >
-                                    <span className="CartIcon">
-                                        <FaShoppingCart />
-                                    </span>
-                                    Checkout now
-                                </button> */}
-
-                                {this.state.Item4 !== 0 && (
+                                {this.state.Itemcount === 0 ? (
+                                    <button
+                                        className="CheckoutBtnStyle button is-large is-black is-rounded"
+                                        disabled
+                                    >
+                                        Your shopping cart is empty
+                                    </button>
+                                ) : (
                                     <button
                                         onClick={this.handleClick}
                                         className="CheckoutBtnStyle button is-large is-black is-rounded"
@@ -193,6 +205,9 @@ export default class App extends React.Component {
                                         Checkout now
                                     </button>
                                 )}
+                                <button className="CheckoutBtnStyle button is-large is-black is-rounded">
+                                    {this.state.Itemcount}
+                                </button>
                             </span>
                         </li>
                     </ul>
@@ -334,6 +349,7 @@ export default class App extends React.Component {
                                 </span>
                                 <button
                                     onClick={this.ItemRemove4}
+                                    disabled={this.state.Item4 === 0}
                                     ariaLabel={
                                         'Remove 1 order of Chips with Salsa from the cart'
                                     }
@@ -369,6 +385,7 @@ export default class App extends React.Component {
                                 </span>
                                 <button
                                     onClick={this.ItemRemove5}
+                                    disabled={this.state.Item5 === 0}
                                     ariaLabel={
                                         'Remove 1 order of noddles with eggs from the cart'
                                     }
@@ -405,6 +422,7 @@ export default class App extends React.Component {
                                 </span>
                                 <button
                                     onClick={this.ItemRemove6}
+                                    disabled={this.state.Item6 === 0}
                                     ariaLabel={
                                         'Remove 1 order of Cappuccino from the cart'
                                     }
@@ -444,6 +462,7 @@ export default class App extends React.Component {
                                 </span>
                                 <button
                                     onClick={this.ItemRemove7}
+                                    disabled={this.state.Item7 === 0}
                                     ariaLabel={
                                         'Remove 1 order of Pasta with Broccoli from the cart and subtract $18.77'
                                     }
@@ -477,6 +496,7 @@ export default class App extends React.Component {
                                 </span>
                                 <button
                                     onClick={this.ItemRemove8}
+                                    disabled={this.state.Item8 === 0}
                                     ariaLabel={
                                         'Remove 1 order of Toast with fried eggs from the cart and subtract $12.48'
                                     }
@@ -508,8 +528,120 @@ export default class App extends React.Component {
                                 </span>
                                 <button
                                     onClick={this.ItemRemove9}
+                                    disabled={this.state.Item9 === 0}
                                     ariaLabel={
                                         'Remove 1 order of Toast with fried eggs from the cart and subtract $12.48'
+                                    }
+                                    className="ItemRemove button is-danger is-rounded"
+                                >
+                                    -
+                                </button>
+                                <br />
+                            </span>
+                        </section>
+                        <br />
+                    </main>
+
+                    <main className="row">
+                        <section className="ItemTab col">
+                            <span className="ImgStyle">
+                                <img
+                                    src={item1_SPS}
+                                    alt="Potato Salad - Item 1"
+                                />
+                                <h1 className="ItemTitle">Potato Salad</h1>
+                            </span>
+
+                            <br />
+                            <br />
+
+                            <span className="OrderTab">
+                                <button
+                                    onClick={this.ItemAdd1}
+                                    ariaLabel={'Add Potato Salad'}
+                                    className="ItemAdd button is-success is-rounded"
+                                >
+                                    +
+                                </button>
+                                <span className="ItemCountCurrent">
+                                    {this.state.Item1}
+                                </span>
+                                <button
+                                    onClick={this.ItemRemove1}
+                                    disabled={this.state.Item1 === 0}
+                                    ariaLabel={
+                                        'Remove 1 order of Potato Salad from the cart'
+                                    }
+                                    className="ItemRemove button is-danger is-rounded"
+                                >
+                                    -
+                                </button>
+                            </span>
+                        </section>
+
+                        <section className="ItemTab col">
+                            <span className="ImgStyle">
+                                <img
+                                    src={item2_BCP}
+                                    alt="Cheese Pizza - item 2"
+                                />
+                            </span>
+                            <h1 className="ItemTitle">Cheese Pizza</h1>
+                            <br />
+                            <br />
+                            <span className="OrderTab">
+                                <button
+                                    onClick={this.ItemAdd2}
+                                    ariaLabel={
+                                        'Add 1 order of Cheese Pizza to your cart'
+                                    }
+                                    className="ItemAdd button is-success is-rounded"
+                                >
+                                    +
+                                </button>
+                                <span className="ItemCountCurrent">
+                                    {this.state.Item2}
+                                </span>
+                                <button
+                                    onClick={this.ItemRemove2}
+                                    disabled={this.state.Item2 === 0}
+                                    ariaLabel={
+                                        'Remove 1 order of Cheese Pizza from the cart'
+                                    }
+                                    className="ItemRemove button is-danger is-rounded"
+                                >
+                                    -
+                                </button>
+                                <br />
+                            </span>
+                        </section>
+
+                        <section className="ItemTab col">
+                            <span className="ImgStyle">
+                                <img src={item3_BF} alt="Hamburger - item 3" />
+                            </span>
+                            <h1 className="ItemTitle">Hamburger</h1>
+                            <br />
+                            <br />
+
+                            <span className="OrderTab">
+                                <button
+                                    onClick={this.ItemAdd3}
+                                    ariaLabel={
+                                        'Add 1 Burger combo to your cart'
+                                    }
+                                    className="ItemAdd button is-success is-rounded"
+                                >
+                                    +
+                                </button>
+                                <span className="ItemCountCurrent">
+                                    {this.state.Item3}
+                                </span>
+                                <button
+                                    onClick={this.ItemRemove3}
+                                    disabled={this.state.Item3 === 0}
+                                    ariaLabel={
+                                        'Remove 1 Hamburger from the cart'
                                     }
                                     className="ItemRemove button is-danger is-rounded"
                                 >
