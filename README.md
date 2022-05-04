@@ -30,12 +30,18 @@ Proof of concept: This app was created as an example of React state, regular exp
 
 ### Future app goals:
 
-- [ ] Refactor code and cut code volume. Divide all components into smaller and separate React components
-- [ ] Add modal display after checkout is done to notify users of their checkout input
+
+- [ ] Finalize code refactoring for all components inside app
+- [ ] Add multiple tests for each React component
 - [ ] Improve the app's UI design for a more responsive experience for mobile users
+- [ ] Add menu items into an online database
+- [ ] Add mock checkout procedure to simulate purchases
+
 
 ### Completed app tasks:
 
+- [x] Refactor code and cut code volume. Divide all components into reusable React components
+- [x] Add modal display after checkout is done to notify users of their checkout input
 - [x] Include CircleCI and Travis-CI inside project
 - [x] Improve UI and UX design for app
 - [x] Perfect UI and UX design for app

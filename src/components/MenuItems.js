@@ -1,6 +1,7 @@
 import React from 'react'
 
-import { FaShoppingCart } from 'react-icons/fa'
+import 'bulma/css/bulma.min.css'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 import item1_SPS from '../assets/item1_SPS.png'
 import item2_BCP from '../assets/item2_BCP.png'
@@ -11,120 +12,11 @@ import item6_CAP from '../assets/item6_CAP.png'
 import item7_ENS from '../assets/item7_ENS.png'
 import item8_TE from '../assets/item8_TE.png'
 import item9_Sm from '../assets/item9_Sm.png'
-
 export default class MenuItems extends React.Component {
     render() {
         return (
             <div className="App">
                 <div className="container">
-                    {/* <main className="row">
-                        <br />
-                        <section className="ItemTab">
-                            <span className="ImgStyle">
-                                <img
-                                    src={item1_SPS}
-                                    alt="Potato Salad - Item 1"
-                                />
-                                <h1 className="ItemTitle">Potato Salad</h1>
-                            </span>
-
-                            <span className="OrderTab">
-                                <button
-                                    onClick={this.ItemAdd1}
-                                    ariaLabel={
-                                        'Add Sweet Potato Salad for $9.64'
-                                    }
-                                    className="ItemAdd button is-success is-rounded"
-                                >
-                                    +
-                                </button>
-                                <span className="ItemCountCurrent">
-                                    {this.state.Item1}
-                                </span>
-                                <button
-                                    onClick={this.ItemRemove1}
-                                    ariaLabel={
-                                        'Remove 1 order of Sweet Potato Salad from the cart and subtract $9.64'
-                                    }
-                                    className="ItemRemove button is-danger is-rounded"
-                                >
-                                    -
-                                </button>
-                                <br />
-                               
-                            </span>
-                        </section>
-
-                        <section className="ItemTab col">
-                            <span className="ImgStyle">
-                                <img
-                                    src={item2_BCP}
-                                    alt="Cheese Pizza - item 2"
-                                />
-                            </span>
-                            <h1 className="ItemTitle">Cheese Pizza</h1>
-
-                            <span className="OrderTab">
-                                <button
-                                    onClick={this.ItemAdd2}
-                                    ariaLabel={
-                                        'Add Brown Crust Pizza for $15.35'
-                                    }
-                                    className="ItemAdd button is-success is-rounded"
-                                >
-                                    +
-                                </button>
-                                <span className="ItemCountCurrent">
-                                    {this.state.Item2}
-                                </span>
-                                <button
-                                    onClick={this.ItemRemove2}
-                                    ariaLabel={
-                                        'Remove 1 order of Brown Crust Pizza from the cart and subtract $15.35'
-                                    }
-                                    className="ItemRemove button is-danger is-rounded"
-                                >
-                                    -
-                                </button>
-                            </span>
-                            <br />
-                            
-                        </section>
-
-                        <section className="ItemTab col">
-                            <span className="ImgStyle">
-                                <img
-                                    src={item3_BF}
-                                    alt="Burger combo - item 3"
-                                />
-                            </span>
-                            <h1 className="ItemTitle">HamBurger combo</h1>
-
-                            <span className="OrderTab">
-                                <button
-                                    onClick={this.ItemAdd3}
-                                    ariaLabel={
-                                        'Add Burger combo'}
-                                    className="ItemAdd button is-success is-rounded"
-                                >
-                                    +
-                                </button>
-                                <span className="ItemCountCurrent">
-                                    {this.state.Item3}
-                                </span>
-                                <button
-                                    onClick={this.ItemRemove3}
-                                    ariaLabel={ 'Remove 1 order of Burger combo' }
-                                    className="ItemRemove button is-danger is-rounded"
-                                >
-                                    -
-                                </button>
-                                
-                                
-                            </span>
-                        </section>
-                    </main> */}
-
                     <main className="row">
                         <section className="ItemTab col">
                             <span className="ImgStyle">
@@ -151,6 +43,7 @@ export default class MenuItems extends React.Component {
                                 </span>
                                 <button
                                     onClick={this.ItemRemove4}
+                                    disabled={this.state.Item4 === 0}
                                     ariaLabel={
                                         'Remove 1 order of Chips with Salsa from the cart'
                                     }
@@ -186,6 +79,7 @@ export default class MenuItems extends React.Component {
                                 </span>
                                 <button
                                     onClick={this.ItemRemove5}
+                                    disabled={this.state.Item5 === 0}
                                     ariaLabel={
                                         'Remove 1 order of noddles with eggs from the cart'
                                     }
@@ -222,6 +116,7 @@ export default class MenuItems extends React.Component {
                                 </span>
                                 <button
                                     onClick={this.ItemRemove6}
+                                    disabled={this.state.Item6 === 0}
                                     ariaLabel={
                                         'Remove 1 order of Cappuccino from the cart'
                                     }
@@ -261,6 +156,7 @@ export default class MenuItems extends React.Component {
                                 </span>
                                 <button
                                     onClick={this.ItemRemove7}
+                                    disabled={this.state.Item7 === 0}
                                     ariaLabel={
                                         'Remove 1 order of Pasta with Broccoli from the cart and subtract $18.77'
                                     }
@@ -277,7 +173,7 @@ export default class MenuItems extends React.Component {
                                 src={item8_TE}
                                 alt="Toast with fried eggs - item 8"
                             />
-                            <h1 className="ItemTitle">Toast with fried eggs</h1>
+                            <h1 className="ItemTitle">Toast w/ eggs</h1>
 
                             <span className="OrderTab">
                                 <button
@@ -294,6 +190,7 @@ export default class MenuItems extends React.Component {
                                 </span>
                                 <button
                                     onClick={this.ItemRemove8}
+                                    disabled={this.state.Item8 === 0}
                                     ariaLabel={
                                         'Remove 1 order of Toast with fried eggs from the cart and subtract $12.48'
                                     }
@@ -315,9 +212,7 @@ export default class MenuItems extends React.Component {
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd9}
-                                    ariaLabel={
-                                        'Add Toast with fried eggs to your cart'
-                                    }
+                                    ariaLabel={'Add 1 smoothie to your cart'}
                                     className="ItemAdd button is-success is-rounded"
                                 >
                                     +
@@ -327,8 +222,120 @@ export default class MenuItems extends React.Component {
                                 </span>
                                 <button
                                     onClick={this.ItemRemove9}
+                                    disabled={this.state.Item9 === 0}
                                     ariaLabel={
                                         'Remove 1 order of Toast with fried eggs from the cart and subtract $12.48'
+                                    }
+                                    className="ItemRemove button is-danger is-rounded"
+                                >
+                                    -
+                                </button>
+                                <br />
+                            </span>
+                        </section>
+                        <br />
+                    </main>
+
+                    <main className="row">
+                        <section className="ItemTab col">
+                            <span className="ImgStyle">
+                                <img
+                                    src={item1_SPS}
+                                    alt="Potato Salad - Item 1"
+                                />
+                                <h1 className="ItemTitle">Potato Salad</h1>
+                            </span>
+
+                            <br />
+                            <br />
+
+                            <span className="OrderTab">
+                                <button
+                                    onClick={this.ItemAdd1}
+                                    ariaLabel={'Add Potato Salad'}
+                                    className="ItemAdd button is-success is-rounded"
+                                >
+                                    +
+                                </button>
+                                <span className="ItemCountCurrent">
+                                    {this.state.Item1}
+                                </span>
+                                <button
+                                    onClick={this.ItemRemove1}
+                                    disabled={this.state.Item1 === 0}
+                                    ariaLabel={
+                                        'Remove 1 order of Potato Salad from the cart'
+                                    }
+                                    className="ItemRemove button is-danger is-rounded"
+                                >
+                                    -
+                                </button>
+                            </span>
+                        </section>
+
+                        <section className="ItemTab col">
+                            <span className="ImgStyle">
+                                <img
+                                    src={item2_BCP}
+                                    alt="Cheese Pizza - item 2"
+                                />
+                            </span>
+                            <h1 className="ItemTitle">Cheese Pizza</h1>
+                            <br />
+                            <br />
+                            <span className="OrderTab">
+                                <button
+                                    onClick={this.ItemAdd2}
+                                    ariaLabel={
+                                        'Add 1 order of Cheese Pizza to your cart'
+                                    }
+                                    className="ItemAdd button is-success is-rounded"
+                                >
+                                    +
+                                </button>
+                                <span className="ItemCountCurrent">
+                                    {this.state.Item2}
+                                </span>
+                                <button
+                                    onClick={this.ItemRemove2}
+                                    disabled={this.state.Item2 === 0}
+                                    ariaLabel={
+                                        'Remove 1 order of Cheese Pizza from the cart'
+                                    }
+                                    className="ItemRemove button is-danger is-rounded"
+                                >
+                                    -
+                                </button>
+                                <br />
+                            </span>
+                        </section>
+
+                        <section className="ItemTab col">
+                            <span className="ImgStyle">
+                                <img src={item3_BF} alt="Hamburger - item 3" />
+                            </span>
+                            <h1 className="ItemTitle">Hamburger</h1>
+                            <br />
+                            <br />
+
+                            <span className="OrderTab">
+                                <button
+                                    onClick={this.ItemAdd3}
+                                    ariaLabel={
+                                        'Add 1 Burger combo to your cart'
+                                    }
+                                    className="ItemAdd button is-success is-rounded"
+                                >
+                                    +
+                                </button>
+                                <span className="ItemCountCurrent">
+                                    {this.state.Item3}
+                                </span>
+                                <button
+                                    onClick={this.ItemRemove3}
+                                    disabled={this.state.Item3 === 0}
+                                    ariaLabel={
+                                        'Remove 1 Hamburger from the cart'
                                     }
                                     className="ItemRemove button is-danger is-rounded"
                                 >

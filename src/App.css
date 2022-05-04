@@ -74,6 +74,11 @@ button {
     background-color: #dfdfdf;
     border-radius: 1%;
     width: 27rem;
+    filter: drop-shadow(0 0 0.75rem #110709);
+}
+
+.ModalTitle {
+    text-align: center;
 }
 
 /*
