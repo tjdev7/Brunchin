@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Fodee/static/css/main.ff8b9d8f.css",
-    "main.js": "/Fodee/static/js/main.28acb433.js",
+    "main.css": "/Fodee/static/css/main.5407cc2d.css",
+    "main.js": "/Fodee/static/js/main.cd8a4ff6.js",
     "static/js/787.31b7cf5c.chunk.js": "/Fodee/static/js/787.31b7cf5c.chunk.js",
     "static/media/item2_BCP.png": "/Fodee/static/media/item2_BCP.89990675b11d836a355b.png",
     "static/media/item1_SPS.png": "/Fodee/static/media/item1_SPS.9c8c386de240c15c0c8f.png",
@@ -13,12 +13,12 @@
     "static/media/item7_ENS.png": "/Fodee/static/media/item7_ENS.cdb47ddb2a5e1b1c10f1.png",
     "static/media/item5_BN.png": "/Fodee/static/media/item5_BN.ccf2f02b280b3fb5e367.png",
     "index.html": "/Fodee/index.html",
-    "main.ff8b9d8f.css.map": "/Fodee/static/css/main.ff8b9d8f.css.map",
-    "main.28acb433.js.map": "/Fodee/static/js/main.28acb433.js.map",
+    "main.5407cc2d.css.map": "/Fodee/static/css/main.5407cc2d.css.map",
+    "main.cd8a4ff6.js.map": "/Fodee/static/js/main.cd8a4ff6.js.map",
     "787.31b7cf5c.chunk.js.map": "/Fodee/static/js/787.31b7cf5c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff8b9d8f.css",
-    "static/js/main.28acb433.js"
+    "static/css/main.5407cc2d.css",
+    "static/js/main.cd8a4ff6.js"
   ]
 }
