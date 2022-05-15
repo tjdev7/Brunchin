@@ -220,6 +220,7 @@ export default class Main extends React.Component {
                         <Modal
                             show={this.state.checkoutDisplaymodal}
                             onHide={() => this.handleClick()}
+                            className="ModalStyle"
                         >
                             <Modal.Header closeButton>
                                 <h1 className="ModalTitle">

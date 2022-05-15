@@ -83,7 +83,7 @@ button {
 
 /*
 --------------------------------------------------
-Font style 
+                    Font style 
 ---------------------------------------------------
 */
 .ItemTitle {
@@ -109,7 +109,6 @@ h2 {
 
 .ItemAdd,
 .ItemRemove {
-    background: #ffffff;
     cursor: pointer;
     font-size: 2rem;
     padding: 1.5rem;
@@ -117,6 +116,14 @@ h2 {
 
 .OrderTab {
     padding: 0rem;
+}
+
+.ModalStyle {
+    background-color: #0f0909;
+}
+
+.ModelTab {
+    background-color: #ffa500;
 }
 
 /*
