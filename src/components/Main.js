@@ -254,7 +254,7 @@ export default class Main extends React.Component {
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd7}
-                                    ariaLabel={'Add Pasta with Broccoli'}
+                                    aria-label={'Add Pasta with Broccoli'}
                                     className="ItemAdd button is-success is-rounded"
                                 >
                                     +
@@ -265,7 +265,7 @@ export default class Main extends React.Component {
                                 <button
                                     onClick={this.ItemRemove7}
                                     disabled={this.state.Item7 === 0}
-                                    ariaLabel={
+                                    aria-label={
                                         'Remove 1 order of Pasta with Broccoli from the cart and subtract $18.77'
                                     }
                                     className="ItemRemove button is-danger is-rounded"
@@ -286,7 +286,7 @@ export default class Main extends React.Component {
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd8}
-                                    ariaLabel={
+                                    aria-label={
                                         'Add Toast with fried eggs to your cart'
                                     }
                                     className="ItemAdd button is-success is-rounded"
@@ -299,7 +299,7 @@ export default class Main extends React.Component {
                                 <button
                                     onClick={this.ItemRemove8}
                                     disabled={this.state.Item8 === 0}
-                                    ariaLabel={
+                                    aria-label={
                                         'Remove 1 order of Toast with fried eggs from the cart and subtract $12.48'
                                     }
                                     className="ItemRemove button is-danger is-rounded"
@@ -320,7 +320,7 @@ export default class Main extends React.Component {
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd9}
-                                    ariaLabel={'Add 1 smoothie to your cart'}
+                                    aria-label={'Add 1 smoothie to your cart'}
                                     className="ItemAdd button is-success is-rounded"
                                 >
                                     +
@@ -331,7 +331,7 @@ export default class Main extends React.Component {
                                 <button
                                     onClick={this.ItemRemove9}
                                     disabled={this.state.Item9 === 0}
-                                    ariaLabel={
+                                    aria-label={
                                         'Remove 1 order of Toast with fried eggs from the cart'
                                     }
                                     className="ItemRemove button is-danger is-rounded"
@@ -360,7 +360,7 @@ export default class Main extends React.Component {
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd1}
-                                    ariaLabel={'Add Potato Salad'}
+                                    aria-label={'Add Potato Salad'}
                                     className="ItemAdd button is-success is-rounded"
                                 >
                                     +
@@ -371,7 +371,7 @@ export default class Main extends React.Component {
                                 <button
                                     onClick={this.ItemRemove1}
                                     disabled={this.state.Item1 === 0}
-                                    ariaLabel={
+                                    aria-label={
                                         'Remove 1 order of Potato Salad from the cart'
                                     }
                                     className="ItemRemove button is-danger is-rounded"
@@ -394,7 +394,7 @@ export default class Main extends React.Component {
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd2}
-                                    ariaLabel={
+                                    aria-label={
                                         'Add 1 order of Cheese Pizza to your cart'
                                     }
                                     className="ItemAdd button is-success is-rounded"
@@ -407,7 +407,7 @@ export default class Main extends React.Component {
                                 <button
                                     onClick={this.ItemRemove2}
                                     disabled={this.state.Item2 === 0}
-                                    ariaLabel={
+                                    aria-label={
                                         'Remove 1 order of Cheese Pizza from the cart'
                                     }
                                     className="ItemRemove button is-danger is-rounded"
@@ -429,7 +429,7 @@ export default class Main extends React.Component {
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd3}
-                                    ariaLabel={
+                                    aria-label={
                                         'Add 1 Burger combo to your cart'
                                     }
                                     className="ItemAdd button is-success is-rounded"
@@ -442,7 +442,7 @@ export default class Main extends React.Component {
                                 <button
                                     onClick={this.ItemRemove3}
                                     disabled={this.state.Item3 === 0}
-                                    ariaLabel={
+                                    aria-label={
                                         'Remove 1 Hamburger from the cart'
                                     }
                                     className="ItemRemove button is-danger is-rounded"
@@ -469,7 +469,7 @@ export default class Main extends React.Component {
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd4}
-                                    ariaLabel={
+                                    aria-label={
                                         'Add Chips with Salsa to the cart'
                                     }
                                     className="ItemAdd button is-success is-rounded"
@@ -482,7 +482,7 @@ export default class Main extends React.Component {
                                 <button
                                     onClick={this.ItemRemove4}
                                     disabled={this.state.Item4 === 0}
-                                    ariaLabel={
+                                    aria-label={
                                         'Remove 1 order of Chips with Salsa from the cart'
                                     }
                                     className="ItemRemove button is-danger is-rounded"
@@ -505,7 +505,7 @@ export default class Main extends React.Component {
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd5}
-                                    ariaLabel={
+                                    aria-label={
                                         'Add noddles with eggs to the cart'
                                     }
                                     className="ItemAdd button is-success is-rounded"
@@ -518,7 +518,7 @@ export default class Main extends React.Component {
                                 <button
                                     onClick={this.ItemRemove5}
                                     disabled={this.state.Item5 === 0}
-                                    ariaLabel={
+                                    aria-label={
                                         'Remove 1 order of noddles with eggs from the cart'
                                     }
                                     className="ItemRemove button is-danger is-rounded"
@@ -541,7 +541,7 @@ export default class Main extends React.Component {
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd6}
-                                    ariaLabel={'Add Latte to the cart'}
+                                    aria-label={'Add Latte to the cart'}
                                     className="ItemAdd button is-success is-rounded"
                                 >
                                     +
@@ -552,7 +552,7 @@ export default class Main extends React.Component {
                                 <button
                                     onClick={this.ItemRemove6}
                                     disabled={this.state.Item6 === 0}
-                                    ariaLabel={
+                                    aria-label={
                                         'Remove 1 order of Cappuccino from the cart'
                                     }
                                     className="ItemRemove button is-danger is-rounded"
