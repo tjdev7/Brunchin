@@ -18,7 +18,7 @@ Proof of concept: This app was created as an example of React state, regular exp
 
 ## Testing / Linter tools used for app:
 
--   React Testing library and Jest for testing components
+-   React Testing library, Mocha, Jest and Cypress for testing components
 -   TravisCI and CircleCI for CI/CD development
 -   Prettier for keeping all code formatted and organized
 
