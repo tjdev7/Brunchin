@@ -197,7 +197,7 @@ export default class Main extends React.Component {
                                     </button>
                                 )}
                                 <button className="CheckoutBtnStyle button is-large is-black is-rounded">
-                                    {this.state.Itemcount} | $47.74
+                                    {this.state.Itemcount} 
                                 </button>
                             </span>
                         </li>
