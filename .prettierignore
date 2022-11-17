@@ -68,3 +68,5 @@ typings/
 .storybook
 .src/stories
 .src/views
+
+cypress/
