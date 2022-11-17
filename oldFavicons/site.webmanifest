@@ -1,6 +1,6 @@
 {
-    "name": "Brunchin",
-    "short_name": "An open source point of sale management system",
+    "name": "Fodee",
+    "short_name": "Food ordering app",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
