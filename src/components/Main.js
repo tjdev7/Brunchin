@@ -8,16 +8,6 @@ import Modal from 'react-bootstrap/Modal'
 
 import { FaShoppingCart } from 'react-icons/fa'
 
-import item1_SPS from '../assets/item1_SPS.png'
-import item2_BCP from '../assets/item2_BCP.png'
-import item3_BF from '../assets/item3_BF.png'
-import item4_CS from '../assets/item4_CS.png'
-import item5_BN from '../assets/item5_BN.png'
-import item6_CAP from '../assets/item6_CAP.png'
-import item7_ENS from '../assets/item7_ENS.png'
-import item8_TE from '../assets/item8_TE.png'
-import item9_Sm from '../assets/item9_Sm.png'
-
 export default class Main extends React.Component {
     constructor(props) {
         super(props)
@@ -224,11 +214,14 @@ export default class Main extends React.Component {
                         >
                             <Modal.Header closeButton>
                                 <h1 className="ModalTitle">
-                                    Checkout complete!
+                                    Your order is complete.
                                 </h1>
                             </Modal.Header>
                             <Modal.Body>
-                                <h5>Be sure to continue shopping for more.</h5>
+                                <h5>
+                                    Wait time for everything should be around 20
+                                    minutes
+                                </h5>
                             </Modal.Body>
                             <Modal.Footer>
                                 <Button
@@ -242,18 +235,11 @@ export default class Main extends React.Component {
                     </div>
 
                     <main className="row">
+                        <hr />
+                        <h1>Entrees</h1>
                         <section className="ItemTab col">
-                            <span className="ImgStyle">
-                                <img
-                                    src={item7_ENS}
-                                    alt="Pasta dinner - item 7"
-                                />
-                            </span>
                             <h1 className="ItemTitle">Pasta dinner</h1>
                             <br />
-                            <br />
-                            <br />
-
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd7}
@@ -280,12 +266,8 @@ export default class Main extends React.Component {
                         </section>
 
                         <section className="ItemTab col">
-                            <img
-                                src={item8_TE}
-                                alt="Toast with fried eggs - item 8"
-                            />
-                            <h1 className="ItemTitle">Toast w/ eggs</h1>
-
+                            <h1 className="ItemTitle">Toast with eggs</h1>
+                            <br />
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd8}
@@ -313,6 +295,8 @@ export default class Main extends React.Component {
                             </span>
                         </section>
 
+<<<<<<< HEAD
+=======
                         <section className="ItemTab col">
                             <img src={item9_Sm} alt="Smoothie - item 9" />
                             <h1 className="ItemTitle">Smoothie</h1>
@@ -344,21 +328,16 @@ export default class Main extends React.Component {
                                 <br />
                             </span>
                         </section>
+>>>>>>> 185a71b8f2b9fb5d272a45c7ed683bebff54274d
                         <br />
                     </main>
 
                     <main className="row">
                         <section className="ItemTab col">
                             <span className="ImgStyle">
-                                <img
-                                    src={item1_SPS}
-                                    alt="Potato Salad - Item 1"
-                                />
                                 <h1 className="ItemTitle">Potato Salad</h1>
+                                <br />
                             </span>
-
-                            <br />
-                            <br />
 
                             <span className="OrderTab">
                                 <button
@@ -385,14 +364,7 @@ export default class Main extends React.Component {
                         </section>
 
                         <section className="ItemTab col">
-                            <span className="ImgStyle">
-                                <img
-                                    src={item2_BCP}
-                                    alt="Cheese Pizza - item 2"
-                                />
-                            </span>
                             <h1 className="ItemTitle">Cheese Pizza</h1>
-                            <br />
                             <br />
                             <span className="OrderTab">
                                 <button
@@ -422,11 +394,7 @@ export default class Main extends React.Component {
                         </section>
 
                         <section className="ItemTab col">
-                            <span className="ImgStyle">
-                                <img src={item3_BF} alt="Hamburger - item 3" />
-                            </span>
                             <h1 className="ItemTitle">Hamburger</h1>
-                            <br />
                             <br />
 
                             <span className="OrderTab">
@@ -459,13 +427,9 @@ export default class Main extends React.Component {
                     </main>
 
                     <main className="row">
+                        <hr />
+                        <h1>Sides</h1>
                         <section className="ItemTab col">
-                            <span className="ImgStyle">
-                                <img
-                                    src={item4_CS}
-                                    alt="Chips with Salsa - item 4"
-                                />
-                            </span>
                             <h1 className="ItemTitle">Chips with Salsa</h1>
                             <br />
 
@@ -495,14 +459,9 @@ export default class Main extends React.Component {
                                 <br />
                             </span>
                         </section>
+
                         <section className="ItemTab col">
-                            <span className="ImgStyle">
-                                <img
-                                    src={item5_BN}
-                                    alt="Udon Noodles - item 5"
-                                />
-                            </span>
-                            <h1 className="ItemTitle">Udon Noodles</h1>
+                            <h1 className="ItemTitle">French Fries</h1>
                             <br />
 
                             <span className="OrderTab">
@@ -530,15 +489,13 @@ export default class Main extends React.Component {
                                 </button>
                             </span>
                         </section>
-
+                        <hr />
+                        <h1>Drinks</h1>
                         <section className="ItemTab col">
                             <span className="ImgStyle">
-                                <img src={item6_CAP} alt="Latte - Item 6" />
+                                {/* <img src={item6_CAP} alt="Latte - Item 6" /> */}
                             </span>
                             <h1 className="ItemTitle">Latte</h1>
-                            <br />
-                            <br />
-                            <br />
                             <br />
 
                             <span className="OrderTab">
@@ -559,6 +516,35 @@ export default class Main extends React.Component {
                                         'Remove 1 order of Cappuccino from the cart'
                                     }
                                     className="ItemRemove button is-dark "
+                                >
+                                    -
+                                </button>
+                                <br />
+                            </span>
+                        </section>
+
+                        <section className="ItemTab col">
+                            <h1 className="ItemTitle">Smoothie</h1>
+                            <br />
+
+                            <span className="OrderTab">
+                                <button
+                                    onClick={this.ItemAdd9}
+                                    aria-label={'Add 1 smoothie to your cart'}
+                                    className="ItemAdd button is-success is-rounded"
+                                >
+                                    +
+                                </button>
+                                <span className="ItemCountCurrent">
+                                    {this.state.Item9}
+                                </span>
+                                <button
+                                    onClick={this.ItemRemove9}
+                                    disabled={this.state.Item9 === 0}
+                                    aria-label={
+                                        'Remove 1 order of Toast with fried eggs from the cart'
+                                    }
+                                    className="ItemRemove button is-danger is-rounded"
                                 >
                                     -
                                 </button>

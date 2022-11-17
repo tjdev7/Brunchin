@@ -6,7 +6,13 @@
 
 header {
     padding: 0.5rem;
+<<<<<<< HEAD
+    background-color: #ffa500;
+    border-bottom: 5px solid #242424;
+    /* padding: 1rem 2rem 4.5rem 2rem; */
+=======
     background-color: #ff0000;
+>>>>>>> 185a71b8f2b9fb5d272a45c7ed683bebff54274d
 }
 
 li {
@@ -19,16 +25,20 @@ li {
 }
 
 ul {
+<<<<<<< HEAD
+    /* background-color: #ffa500; */
+=======
     background-color: #ff0000;
+>>>>>>> 185a71b8f2b9fb5d272a45c7ed683bebff54274d
     list-style-type: none;
     margin: 0rem;
     padding: 1rem 2rem 4.5rem 2rem;
 }
 
-button {
+/* button {
     font-size: 1.7rem;
     padding: 1rem;
-}
+} */
 
 .OrderBtn {
     font-size: 1.7rem;
@@ -49,12 +59,12 @@ button {
 img {
     width: 22rem;
     height: 17rem;
+<<<<<<< HEAD
+    /* border: 5px solid #ffa500; */
+=======
     border: 7px dashed #ff0000;
+>>>>>>> 185a71b8f2b9fb5d272a45c7ed683bebff54274d
 }
-
-/* .ImgStyle {
-    background-color: #ffa500;
-} */
 
 .CheckoutBtnStyle {
     padding: -3rem;
@@ -63,17 +73,17 @@ img {
 }
 
 button {
-    margin: 0.5rem;
+    margin: 0.1rem;
 }
 
 .ItemTab {
     text-align: center;
-    padding: 1rem;
-    margin: 2rem;
+    padding: 0.5rem;
+    margin: 1rem;
     background-color: #dfdfdf;
     border-radius: 1%;
-    width: 27rem;
-    filter: drop-shadow(0 0 0.75rem #110709);
+    width: 23rem;
+    filter: drop-shadow(0 0 0.45rem #110709);
 }
 
 .ModalTitle {
@@ -88,7 +98,7 @@ button {
 .ItemTitle {
     font-family: 'Poiret One', cursive;
     font-weight: bold;
-    font-size: 3.7rem;
+    font-size: 3rem;
 }
 
 .Adding {
