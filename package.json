@@ -1,26 +1,7 @@
 {
-<<<<<<< HEAD
   "name": "brunchin",
-  "version": "2.3.0",
-  "homepage": "https://toughee.github.io/Brunchin/",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.16.5",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^14.4.3",
-    "bootstrap": "^5.2.2",
-    "bulma": "^0.9.4",
-    "nodemon": "^2.0.20",
-    "prettier": "^2.7.1",
-    "react": "^18.2.0",
-    "react-bootstrap": "^2.5.0",
-    "react-dom": "^18.2.0",
-    "react-icons": "^4.6.0",
-    "react-router-dom": "^6.4.3",
-=======
-  "name": "fodee",
-  "version": "2.3.0",
-  "homepage": "https://toughee.github.io/Fodee/",
+  "version": "2.3.1",
+  "homepage": "https://tjdev7.github.io/Fodee/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
@@ -35,7 +16,6 @@
     "react-dom": "^18.1.0",
     "react-icons": "^4.4.0",
     "react-router-dom": "^6.3.0",
->>>>>>> 185a71b8f2b9fb5d272a45c7ed683bebff54274d
     "react-scripts": "^5.0.1",
     "web-vitals": "^3.0.4"
   },
@@ -73,10 +53,6 @@
     ]
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "flow-babel-webpack-plugin": "^1.1.1",
-    "gh-pages": "^4.0.0"
-=======
     "@babel/core": "^7.18.2",
     "@babel/preset-env": "^7.18.2",
     "@babel/preset-react": "^7.17.12",
@@ -93,6 +69,5 @@
     "webpack": "^5.73.0",
     "webpack-cli": "^4.9.2",
     "webpack-dev-server": "^4.9.1"
->>>>>>> 185a71b8f2b9fb5d272a45c7ed683bebff54274d
   }
 }

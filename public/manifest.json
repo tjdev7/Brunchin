@@ -1,6 +1,6 @@
 {
-  "short_name": "Fodee",
-  "name": "Food ordering app",
+  "short_name": "Brunchin",
+  "name": "An open source point of sale management system",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
+  "theme_color": "#FFA500",
   "background_color": "#ffffff"
 }

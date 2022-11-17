@@ -2,7 +2,7 @@
 
 # Brunchin
 
-Open source Point of sale management system
+An open source point of sale management system with a constantly expanding service platform. 
 
 ![Splash page](./public/img/Brunchin_splashpage.png)
 
@@ -35,6 +35,7 @@ Brunchin is currently in development and is looking for any contributors to help
 - [ ] Finish refactoring code for all components inside app
 - [ ] Add multiple test types (Unit testing, Integration testing, performance testing, usability testing, load caching, etc) for each React component
 - [ ] Improve the app's UI design for a more responsive experience for mobile users
+- [ ] Update app's performance and UI design for multiple browsers (Safari, Firefox, Opera, etc)
 ### Version 3 app updates
 
 - [ ] Create custom menu items option for shop owners to change their menu with little hassle

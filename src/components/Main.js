@@ -238,13 +238,15 @@ export default class Main extends React.Component {
                         <hr />
                         <h1>Entrees</h1>
                         <section className="ItemTab col">
+                        <br />
+
                             <h1 className="ItemTitle">Pasta dinner</h1>
                             <br />
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd7}
                                     aria-label={'Add Pasta with Broccoli'}
-                                    className="ItemAdd button is-dark"
+                                    className="ItemAdd button OptMenuStyle is-success"
                                 >
                                     +
                                 </button>
@@ -257,15 +259,16 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Remove 1 order of Pasta with Broccoli from the cart and subtract $18.77'
                                     }
-                                    className="ItemRemove button is-dark "
+                                    className="ItemRemove button OptMenuStyle is-danger"
                                 >
                                     -
                                 </button>
-                                <br />
                             </span>
                         </section>
 
                         <section className="ItemTab col">
+                        <br />
+
                             <h1 className="ItemTitle">Toast with eggs</h1>
                             <br />
                             <span className="OrderTab">
@@ -274,7 +277,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Add Toast with fried eggs to your cart'
                                     }
-                                    className="ItemAdd button is-dark "
+                                    className="ItemAdd button OptMenuStyle is-success"
                                 >
                                     +
                                 </button>
@@ -287,7 +290,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Remove 1 order of Toast with fried eggs from the cart and subtract $12.48'
                                     }
-                                    className="ItemRemove button is-dark "
+                                    className="ItemRemove button OptMenuStyle is-danger"
                                 >
                                     -
                                 </button>
@@ -295,20 +298,18 @@ export default class Main extends React.Component {
                             </span>
                         </section>
 
-<<<<<<< HEAD
-=======
+
                         <section className="ItemTab col">
-                            <img src={item9_Sm} alt="Smoothie - item 9" />
-                            <h1 className="ItemTitle">Smoothie</h1>
-                            <br />
-                            <br />
+                        <br />
+
+                            <h1 className="ItemTitle">Stromboli</h1>
                             <br />
 
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd9}
                                     aria-label={'Add 1 smoothie to your cart'}
-                                    className="ItemAdd button is-dark "
+                                    className="ItemAdd button OptMenuStyle is-success"
                                 >
                                     +
                                 </button>
@@ -321,21 +322,22 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Remove 1 order of Toast with fried eggs from the cart'
                                     }
-                                    className="ItemRemove button is-dark "
+                                    className="ItemRemove button OptMenuStyle is-danger"
                                 >
                                     -
                                 </button>
                                 <br />
                             </span>
                         </section>
->>>>>>> 185a71b8f2b9fb5d272a45c7ed683bebff54274d
                         <br />
                     </main>
 
                     <main className="row">
                         <section className="ItemTab col">
                             <span className="ImgStyle">
-                                <h1 className="ItemTitle">Potato Salad</h1>
+                            <br />
+
+                                <h1 className="ItemTitle">Potato Salad with meat</h1>
                                 <br />
                             </span>
 
@@ -343,7 +345,7 @@ export default class Main extends React.Component {
                                 <button
                                     onClick={this.ItemAdd1}
                                     aria-label={'Add Potato Salad'}
-                                    className="ItemAdd button is-dark "
+                                    className="ItemAdd button OptMenuStyle is-success"
                                 >
                                     +
                                 </button>
@@ -356,7 +358,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Remove 1 order of Potato Salad from the cart'
                                     }
-                                    className="ItemRemove button is-dark "
+                                    className="ItemRemove button OptMenuStyle is-danger"
                                 >
                                     -
                                 </button>
@@ -364,7 +366,9 @@ export default class Main extends React.Component {
                         </section>
 
                         <section className="ItemTab col">
-                            <h1 className="ItemTitle">Cheese Pizza</h1>
+                        <br />
+
+                            <h1 className="ItemTitle">Cheese Pizza with appetizer</h1>
                             <br />
                             <span className="OrderTab">
                                 <button
@@ -372,7 +376,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Add 1 order of Cheese Pizza to your cart'
                                     }
-                                    className="ItemAdd button is-dark "
+                                    className="IItemAdd button OptMenuStyle is-success"
                                 >
                                     +
                                 </button>
@@ -385,7 +389,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Remove 1 order of Cheese Pizza from the cart'
                                     }
-                                    className="ItemRemove button is-dark "
+                                    className="ItemRemove button OptMenuStyle is-danger"
                                 >
                                     -
                                 </button>
@@ -394,7 +398,9 @@ export default class Main extends React.Component {
                         </section>
 
                         <section className="ItemTab col">
-                            <h1 className="ItemTitle">Hamburger</h1>
+                        <br />
+
+                            <h1 className="ItemTitle">Hamburger with fries</h1>
                             <br />
 
                             <span className="OrderTab">
@@ -403,7 +409,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Add 1 Burger combo to your cart'
                                     }
-                                    className="ItemAdd button is-dark "
+                                    className="ItemAdd button OptMenuStyle is-success"
                                 >
                                     +
                                 </button>
@@ -416,7 +422,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Remove 1 Hamburger from the cart'
                                     }
-                                    className="ItemRemove button is-dark "
+                                    className="ItemRemove button OptMenuStyle is-danger"
                                 >
                                     -
                                 </button>
@@ -430,6 +436,8 @@ export default class Main extends React.Component {
                         <hr />
                         <h1>Sides</h1>
                         <section className="ItemTab col">
+                        <br />
+
                             <h1 className="ItemTitle">Chips with Salsa</h1>
                             <br />
 
@@ -439,7 +447,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Add Chips with Salsa to the cart'
                                     }
-                                    className="ItemAdd button is-dark "
+                                    className="ItemAdd button OptMenuStyle is-success"
                                 >
                                     +
                                 </button>
@@ -452,7 +460,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Remove 1 order of Chips with Salsa from the cart'
                                     }
-                                    className="ItemRemove button is-dark "
+                                    className="ItemRemove button OptMenuStyle is-danger"
                                 >
                                     -
                                 </button>
@@ -461,6 +469,8 @@ export default class Main extends React.Component {
                         </section>
 
                         <section className="ItemTab col">
+                        <br />
+
                             <h1 className="ItemTitle">French Fries</h1>
                             <br />
 
@@ -470,7 +480,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Add noddles with eggs to the cart'
                                     }
-                                    className="ItemAdd button is-darl "
+                                    className="ItemAdd button OptMenuStyle is-success"
                                 >
                                     +
                                 </button>
@@ -483,7 +493,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Remove 1 order of noddles with eggs from the cart'
                                     }
-                                    className="ItemRemove button is-dark "
+                                    className="ItemRemove button OptMenuStyle is-danger"
                                 >
                                     -
                                 </button>
@@ -492,9 +502,8 @@ export default class Main extends React.Component {
                         <hr />
                         <h1>Drinks</h1>
                         <section className="ItemTab col">
-                            <span className="ImgStyle">
-                                {/* <img src={item6_CAP} alt="Latte - Item 6" /> */}
-                            </span>
+                        <br />
+
                             <h1 className="ItemTitle">Latte</h1>
                             <br />
 
@@ -502,7 +511,7 @@ export default class Main extends React.Component {
                                 <button
                                     onClick={this.ItemAdd6}
                                     aria-label={'Add Latte to the cart'}
-                                    className="ItemAdd button is-dark "
+                                    className="ItemAdd button OptMenuStyle is-success"
                                 >
                                     +
                                 </button>
@@ -515,15 +524,16 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Remove 1 order of Cappuccino from the cart'
                                     }
-                                    className="ItemRemove button is-dark "
+                                    className="ItemRemove button OptMenuStyle is-danger"
                                 >
                                     -
                                 </button>
-                                <br />
                             </span>
                         </section>
 
                         <section className="ItemTab col">
+                        <br />
+
                             <h1 className="ItemTitle">Smoothie</h1>
                             <br />
 
@@ -531,7 +541,7 @@ export default class Main extends React.Component {
                                 <button
                                     onClick={this.ItemAdd9}
                                     aria-label={'Add 1 smoothie to your cart'}
-                                    className="ItemAdd button is-success is-rounded"
+                                    className="ItemAdd button OptMenuStyle is-success"
                                 >
                                     +
                                 </button>
@@ -544,11 +554,10 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Remove 1 order of Toast with fried eggs from the cart'
                                     }
-                                    className="ItemRemove button is-danger is-rounded"
+                                    className="ItemRemove button OptMenuStyle is-danger"
                                 >
                                     -
                                 </button>
-                                <br />
                             </span>
                         </section>
                     </main>
