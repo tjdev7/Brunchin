@@ -8,7 +8,7 @@ An open source point of sale management system with a constantly expanding servi
 
 ## Why this app as created:
 
-Brunchin was initially created as an example of an app using React state, regular expressions, core Javascript functions and seamless U.X design. But it has since evolved into a biggger project where multiple people are expected to contribute. Brunchin takes inspiration from Toast and Square's own POS system and intends to offer some of it's features as an open source app which anybody can contribute and improve. 
+Brunchin was initially created as an example of an app using React state, regular expressions, core Javascript functions and seamless U.X design. But it has since evolved into a biggger project where multiple people are expected to contribute. Brunchin takes inspiration from Toast and Square's POS system and intends to offer some of it's features as an open source app which anybody can contribute and improve. 
 
 Brunchin is currently in development and is looking for any contributors to help with the dev cycle. Please see the project resources section for more information. 
 
@@ -41,6 +41,8 @@ Brunchin is currently in development and is looking for any contributors to help
 - [ ] Create custom menu items option for shop owners to change their menu with little hassle
 - [ ] Connect app to an external database for better checkout simulation
 - [ ] Improve app's responsive design
+- [ ] Add touch functionalities and ARIA label options to React app
+- [ ] Improve custom menu options inside app
 ### Completed app tasks:
 
 - [x] Add mock checkout procedure to simulate purchases

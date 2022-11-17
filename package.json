@@ -1,7 +1,7 @@
 {
   "name": "brunchin",
-  "version": "2.3.1",
-  "homepage": "https://tjdev7.github.io/Fodee/",
+  "version": "2.4.0",
+  "homepage": "https://tjdev7.github.io/Brunchin/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
