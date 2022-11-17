@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/Fodee/static/css/main.1740b657.css",
-    "main.js": "/Fodee/static/js/main.31bc17f6.js",
-    "static/js/496.634fa4c7.chunk.js": "/Fodee/static/js/496.634fa4c7.chunk.js",
-    "index.html": "/Fodee/index.html",
-    "main.1740b657.css.map": "/Fodee/static/css/main.1740b657.css.map",
-    "main.31bc17f6.js.map": "/Fodee/static/js/main.31bc17f6.js.map",
-    "496.634fa4c7.chunk.js.map": "/Fodee/static/js/496.634fa4c7.chunk.js.map"
+    "main.css": "/Brunchin/static/css/main.1740b657.css",
+    "main.js": "/Brunchin/static/js/main.f7b5e135.js",
+    "static/js/496.634fa4c7.chunk.js": "/Brunchin/static/js/496.634fa4c7.chunk.js",
+    "index.html": "/Brunchin/index.html",
+    "main.1740b657.css.map": "/Brunchin/static/css/main.1740b657.css.map",
+    "main.f7b5e135.js.map": "/Brunchin/static/js/main.f7b5e135.js.map",
+    "496.634fa4c7.chunk.js.map": "/Brunchin/static/js/496.634fa4c7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1740b657.css",
-    "static/js/main.31bc17f6.js"
+    "static/js/main.f7b5e135.js"
   ]
 }
