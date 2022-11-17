@@ -22,5 +22,5 @@
 
 <!---
 Example:
-Fix|Update for Fodee/repository_name/PR-Number/name_of_fix
+Fix|Update for Brunchin/repository_name/PR-Number/name_of_fix
 --->
