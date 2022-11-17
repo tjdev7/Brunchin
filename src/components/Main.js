@@ -180,7 +180,7 @@ export default class Main extends React.Component {
                             <span className="CartCountStyle">
                                 {this.state.Itemcount === 0 ? (
                                     <button
-                                        className="CheckoutBtnStyle button is-large is-black is-rounded"
+                                        className="CheckoutBtnStyle button is-large is-dark"
                                         disabled
                                     >
                                         Your shopping cart is empty
@@ -188,7 +188,7 @@ export default class Main extends React.Component {
                                 ) : (
                                     <button
                                         onClick={this.handleClick}
-                                        className="CheckoutBtnStyle button is-large is-black is-rounded"
+                                        className="CheckoutBtnStyle button is-large is-dark"
                                     >
                                         <span className="CartIcon">
                                             <FaShoppingCart />
@@ -196,7 +196,7 @@ export default class Main extends React.Component {
                                         Checkout now
                                     </button>
                                 )}
-                                <button className="CheckoutBtnStyle button is-large is-black is-rounded">
+                                <button className="CheckoutBtnStyle button is-large is-dark">
                                     {this.state.Itemcount}
                                 </button>
                             </span>
@@ -224,7 +224,10 @@ export default class Main extends React.Component {
                                 </h5>
                             </Modal.Body>
                             <Modal.Footer>
-                                <Button onClick={() => this.handleClick()}>
+                                <Button
+                                    className="CheckoutBtnStyle button is-large is-dark"
+                                    onClick={() => this.handleClick()}
+                                >
                                     Close
                                 </Button>
                             </Modal.Footer>
@@ -241,7 +244,7 @@ export default class Main extends React.Component {
                                 <button
                                     onClick={this.ItemAdd7}
                                     aria-label={'Add Pasta with Broccoli'}
-                                    className="ItemAdd button is-success is-rounded"
+                                    className="ItemAdd button is-dark"
                                 >
                                     +
                                 </button>
@@ -254,7 +257,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Remove 1 order of Pasta with Broccoli from the cart and subtract $18.77'
                                     }
-                                    className="ItemRemove button is-danger is-rounded"
+                                    className="ItemRemove button is-dark "
                                 >
                                     -
                                 </button>
@@ -271,7 +274,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Add Toast with fried eggs to your cart'
                                     }
-                                    className="ItemAdd button is-success is-rounded"
+                                    className="ItemAdd button is-dark "
                                 >
                                     +
                                 </button>
@@ -284,7 +287,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Remove 1 order of Toast with fried eggs from the cart and subtract $12.48'
                                     }
-                                    className="ItemRemove button is-danger is-rounded"
+                                    className="ItemRemove button is-dark "
                                 >
                                     -
                                 </button>
@@ -292,6 +295,40 @@ export default class Main extends React.Component {
                             </span>
                         </section>
 
+<<<<<<< HEAD
+=======
+                        <section className="ItemTab col">
+                            <img src={item9_Sm} alt="Smoothie - item 9" />
+                            <h1 className="ItemTitle">Smoothie</h1>
+                            <br />
+                            <br />
+                            <br />
+
+                            <span className="OrderTab">
+                                <button
+                                    onClick={this.ItemAdd9}
+                                    aria-label={'Add 1 smoothie to your cart'}
+                                    className="ItemAdd button is-dark "
+                                >
+                                    +
+                                </button>
+                                <span className="ItemCountCurrent">
+                                    {this.state.Item9}
+                                </span>
+                                <button
+                                    onClick={this.ItemRemove9}
+                                    disabled={this.state.Item9 === 0}
+                                    aria-label={
+                                        'Remove 1 order of Toast with fried eggs from the cart'
+                                    }
+                                    className="ItemRemove button is-dark "
+                                >
+                                    -
+                                </button>
+                                <br />
+                            </span>
+                        </section>
+>>>>>>> 185a71b8f2b9fb5d272a45c7ed683bebff54274d
                         <br />
                     </main>
 
@@ -306,7 +343,7 @@ export default class Main extends React.Component {
                                 <button
                                     onClick={this.ItemAdd1}
                                     aria-label={'Add Potato Salad'}
-                                    className="ItemAdd button is-success is-rounded"
+                                    className="ItemAdd button is-dark "
                                 >
                                     +
                                 </button>
@@ -319,7 +356,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Remove 1 order of Potato Salad from the cart'
                                     }
-                                    className="ItemRemove button is-danger is-rounded"
+                                    className="ItemRemove button is-dark "
                                 >
                                     -
                                 </button>
@@ -335,7 +372,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Add 1 order of Cheese Pizza to your cart'
                                     }
-                                    className="ItemAdd button is-success is-rounded"
+                                    className="ItemAdd button is-dark "
                                 >
                                     +
                                 </button>
@@ -348,7 +385,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Remove 1 order of Cheese Pizza from the cart'
                                     }
-                                    className="ItemRemove button is-danger is-rounded"
+                                    className="ItemRemove button is-dark "
                                 >
                                     -
                                 </button>
@@ -366,7 +403,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Add 1 Burger combo to your cart'
                                     }
-                                    className="ItemAdd button is-success is-rounded"
+                                    className="ItemAdd button is-dark "
                                 >
                                     +
                                 </button>
@@ -379,7 +416,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Remove 1 Hamburger from the cart'
                                     }
-                                    className="ItemRemove button is-danger is-rounded"
+                                    className="ItemRemove button is-dark "
                                 >
                                     -
                                 </button>
@@ -402,7 +439,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Add Chips with Salsa to the cart'
                                     }
-                                    className="ItemAdd button is-success is-rounded"
+                                    className="ItemAdd button is-dark "
                                 >
                                     +
                                 </button>
@@ -415,7 +452,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Remove 1 order of Chips with Salsa from the cart'
                                     }
-                                    className="ItemRemove button is-danger is-rounded"
+                                    className="ItemRemove button is-dark "
                                 >
                                     -
                                 </button>
@@ -433,7 +470,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Add noddles with eggs to the cart'
                                     }
-                                    className="ItemAdd button is-success is-rounded"
+                                    className="ItemAdd button is-darl "
                                 >
                                     +
                                 </button>
@@ -446,7 +483,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Remove 1 order of noddles with eggs from the cart'
                                     }
-                                    className="ItemRemove button is-danger is-rounded"
+                                    className="ItemRemove button is-dark "
                                 >
                                     -
                                 </button>
@@ -465,7 +502,7 @@ export default class Main extends React.Component {
                                 <button
                                     onClick={this.ItemAdd6}
                                     aria-label={'Add Latte to the cart'}
-                                    className="ItemAdd button is-success is-rounded"
+                                    className="ItemAdd button is-dark "
                                 >
                                     +
                                 </button>
@@ -478,7 +515,7 @@ export default class Main extends React.Component {
                                     aria-label={
                                         'Remove 1 order of Cappuccino from the cart'
                                     }
-                                    className="ItemRemove button is-danger is-rounded"
+                                    className="ItemRemove button is-dark "
                                 >
                                     -
                                 </button>

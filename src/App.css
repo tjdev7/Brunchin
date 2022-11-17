@@ -6,9 +6,13 @@
 
 header {
     padding: 0.5rem;
+<<<<<<< HEAD
     background-color: #ffa500;
     border-bottom: 5px solid #242424;
     /* padding: 1rem 2rem 4.5rem 2rem; */
+=======
+    background-color: #ff0000;
+>>>>>>> 185a71b8f2b9fb5d272a45c7ed683bebff54274d
 }
 
 li {
@@ -21,7 +25,11 @@ li {
 }
 
 ul {
+<<<<<<< HEAD
     /* background-color: #ffa500; */
+=======
+    background-color: #ff0000;
+>>>>>>> 185a71b8f2b9fb5d272a45c7ed683bebff54274d
     list-style-type: none;
     margin: 0rem;
     padding: 1rem 2rem 4.5rem 2rem;
@@ -51,7 +59,11 @@ ul {
 img {
     width: 22rem;
     height: 17rem;
+<<<<<<< HEAD
     /* border: 5px solid #ffa500; */
+=======
+    border: 7px dashed #ff0000;
+>>>>>>> 185a71b8f2b9fb5d272a45c7ed683bebff54274d
 }
 
 .CheckoutBtnStyle {
@@ -100,15 +112,15 @@ h2 {
 }
 
 .ItemCountCurrent {
-    font-size: 4.2rem;
-    padding: 2rem;
+    font-size: 5.5rem;
+    padding: 2.5rem;
 }
 
 .ItemAdd,
 .ItemRemove {
     cursor: pointer;
-    font-size: 2rem;
-    padding: 1.5rem;
+    font-size: 3rem;
+    padding: 2rem;
 }
 
 .OrderTab {
@@ -125,27 +137,24 @@ h2 {
 
 /*
 --------------------------------------------------
-            Unused css
+Media dimensions for smartphone mobile devices
 ---------------------------------------------------
 */
 
-/* .RatingsTabStyle {
-    font-family: 'Michroma', sans-serif;
-    font-size: 1.5rem;
-} */
+/*
+@media only screen and (max-width: 600px) {
 
-/* .ItemAdd {
-    border: 3px solid rgba(6, 255, 6, 0.774);
-}
-
-.ItemRemove {
-    border: 3px solid rgba(255, 30, 30, 0.787);
-} */
+} 
+  */
 
 /*
-possible new style for menu items
+--------------------------------------------------
+Media dimensions for tablets
+---------------------------------------------------
 */
-/* .ItemPanelStyle {
-    background-color: #aca9a9;
-    padding: 2rem;
-} */
+
+/*
+@media (min-width: 768px) and (max-width: 1024px) {
+
+} 
+  */
