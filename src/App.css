@@ -6,13 +6,9 @@
 
 header {
     padding: 0.5rem;
-<<<<<<< HEAD
     background-color: #ffa500;
     border-bottom: 5px solid #242424;
     /* padding: 1rem 2rem 4.5rem 2rem; */
-=======
-    background-color: #ff0000;
->>>>>>> 185a71b8f2b9fb5d272a45c7ed683bebff54274d
 }
 
 li {
@@ -25,11 +21,7 @@ li {
 }
 
 ul {
-<<<<<<< HEAD
     /* background-color: #ffa500; */
-=======
-    background-color: #ff0000;
->>>>>>> 185a71b8f2b9fb5d272a45c7ed683bebff54274d
     list-style-type: none;
     margin: 0rem;
     padding: 1rem 2rem 4.5rem 2rem;
@@ -56,14 +48,13 @@ ul {
     padding: 0.8rem;
 }
 
-img {
-    width: 22rem;
-    height: 17rem;
-<<<<<<< HEAD
-    /* border: 5px solid #ffa500; */
-=======
-    border: 7px dashed #ff0000;
->>>>>>> 185a71b8f2b9fb5d272a45c7ed683bebff54274d
+.OptMenuStyle {
+    border-radius: 50%;
+    padding: 1rem;
+    font-size: 5rem;
+    height: 100px;
+    width: 100px;
+
 }
 
 .CheckoutBtnStyle {
@@ -74,15 +65,16 @@ img {
 
 button {
     margin: 0.1rem;
+    
 }
 
 .ItemTab {
     text-align: center;
     padding: 0.5rem;
-    margin: 1rem;
+    margin: 0.7rem;
     background-color: #dfdfdf;
     border-radius: 1%;
-    width: 23rem;
+    width: 10rem;
     filter: drop-shadow(0 0 0.45rem #110709);
 }
 
