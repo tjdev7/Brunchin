@@ -4,32 +4,63 @@
 
 An open source point of sale management system with a constantly expanding service platform. 
 
-![Splash page](./public/img/Brunchin_splashpage.png)
+- [App screenshot](#app-screenshot)
+- [Why this app as created](#why-this-app-was-reated)
+- [How to use](#how-to-use)
+- [Testing tools used](#testing-tools-used-for-the-app)
+- [Running automated tests](#running-automated-tests)
+- [Project resources](#project-resources)
+- [Completed tasks](#completed-tasks)
+- [Upcoming app updates](#upcoming-app-updates)
 
+## App screenshot
+
+![Splash page](./public/img/Brunchin_splashpage.png)
 ## Why this app as created:
 
 Brunchin was initially created as an example of an app using React state, regular expressions, core Javascript functions and seamless U.X design. But it has since evolved into a biggger project where multiple people are expected to contribute. Brunchin takes inspiration from Toast and Square's POS system and intends to offer some of it's features as an open source app which anybody can contribute and improve. 
 
-Brunchin is currently in development and is looking for any contributors to help with the dev cycle. Please see the project resources section for more information. 
+Brunchin is currently in development and is looking for any contributors to help with the dev cycle. Please see the [project resources section for more information](https://github.com/tjdev7/Brunchin/tree/main/docs)
+
 
 ## How to use:
 
-1. Clone repo into desired directory `git clone https://github.com/Toughee/Brunchin.git` or `gh repo clone Toughee/Brunchin`
+1. Clone repo into desired directory `git clone https://github.com/tjdev7/Brunchin.git` or `gh repo clone tjdev7/Brunchin`
 2. Run `npm install` in your terminal to install all app node modules and dependencies
 3. Run `yarn start` in your terminal to run app on http://localhost:3000/
 
-## Testing / Linter tools used for app:
+## Testing tools used for the app:
 
 -   React Testing library, Mocha, Jest and Cypress for testing components
 -   TravisCI and CircleCI for CI/CD development
--   Prettier for keeping all code formatted and organized
+-   Prettier and ESlint for keeping all code formatted and organized
+
+### Running automated tests:
+
+- ```npm run linterclean``` to run Prettier tests
+- ```npm run jesttests``` to run Jest tests
+- ```npm run test``` to run local React Testing Library tests
+- ```npm run litereport``` to run local Lighthouse tests
+- ```npm run fullaudits``` to update local components and review if any packages are outdated
 
 ## Project resources:
 
--   [Current roadmap for app](https://github.com/Toughee/Brunchin/projects/1)
--   [Wiki page for app](https://github.com/Toughee/Brunchin/wiki)
--   [Documentation for project contributors](https://github.com/Toughee/Brunchin/tree/main/docs)
+-   [Current roadmap for app](https://github.com/tjdev7/Brunchin/projects/1)
+-   [Wiki page for app](https://github.com/tjdev7/Brunchin/wiki)
+-   [Documentation for project contributors](https://github.com/tjdev7/Brunchin/tree/main/docs)
 
+### Completed tasks:
+
+- [x] Add mock checkout procedure to simulate purchases
+- [x] Refactor code and cut code volume. Divide all components into reusable React components
+- [x] Add modal display after checkout is done to notify users of their checkout input
+- [x] Include CircleCI and Travis-CI inside project
+- [x] Improve UI and UX design for app
+- [x] Make app responsive for the majority of user platforms
+- [x] Working checkout button for item and cart total
+- [x] Make the checkout option become visible only if one item is in each item inside the menu list
+
+### Upcoming app updates
 ### Final Version 2 app updates:
 
 - [ ] Finish refactoring code for all components inside app
@@ -43,13 +74,3 @@ Brunchin is currently in development and is looking for any contributors to help
 - [ ] Improve app's responsive design
 - [ ] Add touch functionalities and ARIA label options to React app
 - [ ] Improve custom menu options inside app
-### Completed app tasks:
-
-- [x] Add mock checkout procedure to simulate purchases
-- [x] Refactor code and cut code volume. Divide all components into reusable React components
-- [x] Add modal display after checkout is done to notify users of their checkout input
-- [x] Include CircleCI and Travis-CI inside project
-- [x] Improve UI and UX design for app
-- [x] Make app responsive for the majority of user platforms
-- [x] Working checkout button for item and cart total
-- [x] Make the checkout option become visible only if one item is in each item inside the menu list
