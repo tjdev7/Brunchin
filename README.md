@@ -4,13 +4,14 @@
 
 An open source point of sale management system with a constantly expanding service platform. 
 
-- [App screenshot:](#app-screenshot)
-- [Why this app as created:](#why-this-app-was-reated)
-- [How to use:](#how-to-use)
-- [Testing tools used:](#testing-tools-used-for-the-app)
-- [Running automated tests:](#running-automated-tests)
-- [Project resources:](#project-resources)s
-- [Completed tasks:](#completed-tasks)
+- [App screenshot](#app-screenshot)
+- [Why this app as created](#why-this-app-was-reated)
+- [How to use](#how-to-use)
+- [Testing tools used](#testing-tools-used-for-the-app)
+- [Running automated tests](#running-automated-tests)
+- [Project resources](#project-resources)
+- [Completed tasks](#completed-tasks)
+- [Upcoming app updates](#upcoming-app-updates)
 
 ## App screenshot
 
@@ -36,11 +37,11 @@ Brunchin is currently in development and is looking for any contributors to help
 
 ### Running automated tests:
 
-```npm run linterclean``` to run Prettier tests
-```npm run jesttests``` to run Jest tests
-```npm run test``` to run local React Testing Library tests
-```npm run litereport``` to run local Lighthouse tests
-```npm run fullaudits``` to update local components and review if any packages are outdated
+- ```npm run linterclean``` to run Prettier tests
+- ```npm run jesttests``` to run Jest tests
+- ```npm run test``` to run local React Testing Library tests
+- ```npm run litereport``` to run local Lighthouse tests
+- ```npm run fullaudits``` to update local components and review if any packages are outdated
 
 ## Project resources:
 
@@ -58,7 +59,8 @@ Brunchin is currently in development and is looking for any contributors to help
 - [x] Make app responsive for the majority of user platforms
 - [x] Working checkout button for item and cart total
 - [x] Make the checkout option become visible only if one item is in each item inside the menu list
-# Recent app updates
+
+### Upcoming app updates
 ### Final Version 2 app updates:
 
 - [ ] Finish refactoring code for all components inside app
