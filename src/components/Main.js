@@ -14,7 +14,9 @@ export default class Main extends React.Component {
         this.state = {
             Itemcount: 0,
             CartSum: 0,
+            PriceTotal: 0,
             Item1: 0,
+            Item1Price: 1.0,
             Item2: 0,
             Item3: 0,
             Item4: 0,
@@ -362,6 +364,11 @@ export default class Main extends React.Component {
                                 <button className="CheckoutBtnStyle button is-large is-dark">
                                     {this.state.Itemcount}
                                 </button>
+
+                                <button className="CheckoutBtnStyle button is-large is-dark">
+                                    $0.00
+                                    {/* {this.state.PriceTotal} */}
+                                </button>
                             </span>
                         </li>
                     </ul>
@@ -385,6 +392,11 @@ export default class Main extends React.Component {
                                     Wait time for everything should be around 20
                                     minutes
                                 </h5>
+                                <h5>
+                                    Total number of items:{' '}
+                                    {this.state.Itemcount}
+                                </h5>
+                                <h5>Total:</h5>
                             </Modal.Body>
                             <Modal.Footer>
                                 <Button
@@ -404,11 +416,14 @@ export default class Main extends React.Component {
                             <br />
 
                             <h1 className="ItemTitle">Pasta dinner</h1>
+                            <p className="PriceStyle">$18.74</p>
                             <br />
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd7}
-                                    aria-label={'Add Pasta with Broccoli'}
+                                    aria-label={
+                                        'Add 1 Pasta dinner to the cart'
+                                    }
                                     className="ItemAdd button OptMenuStyle is-success"
                                 >
                                     +
@@ -420,7 +435,7 @@ export default class Main extends React.Component {
                                     onClick={this.ItemRemove7}
                                     disabled={this.state.Item7 === 0}
                                     aria-label={
-                                        'Remove 1 order of Pasta with Broccoli from the cart and subtract $18.77'
+                                        'Remove 1 Pasta dinner from the cart'
                                     }
                                     className="ItemRemove button OptMenuStyle is-danger"
                                 >
@@ -433,12 +448,14 @@ export default class Main extends React.Component {
                             <br />
 
                             <h1 className="ItemTitle">Toast with eggs</h1>
+                            <p className="PriceStyle">$12.48</p>
+
                             <br />
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd8}
                                     aria-label={
-                                        'Add Toast with fried eggs to your cart'
+                                        'Add 1 order Toast with eggs to your cart'
                                     }
                                     className="ItemAdd button OptMenuStyle is-success"
                                 >
@@ -451,7 +468,7 @@ export default class Main extends React.Component {
                                     onClick={this.ItemRemove8}
                                     disabled={this.state.Item8 === 0}
                                     aria-label={
-                                        'Remove 1 order of Toast with fried eggs from the cart and subtract $12.48'
+                                        'Remove 1 order of Toast with eggs from the cart'
                                     }
                                     className="ItemRemove button OptMenuStyle is-danger"
                                 >
@@ -465,12 +482,16 @@ export default class Main extends React.Component {
                             <br />
 
                             <h1 className="ItemTitle">Stromboli</h1>
+                            <p className="PriceStyle">$9.74</p>
+
                             <br />
 
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd9}
-                                    aria-label={'Add 1 smoothie to your cart'}
+                                    aria-label={
+                                        'Add 1 order of Stromboli to your cart'
+                                    }
                                     className="ItemAdd button OptMenuStyle is-success"
                                 >
                                     +
@@ -482,7 +503,7 @@ export default class Main extends React.Component {
                                     onClick={this.ItemRemove9}
                                     disabled={this.state.Item9 === 0}
                                     aria-label={
-                                        'Remove 1 order of Toast with fried eggs from the cart'
+                                        'Remove 1 order of Stromboli from the cart'
                                     }
                                     className="ItemRemove button OptMenuStyle is-danger"
                                 >
@@ -500,15 +521,17 @@ export default class Main extends React.Component {
                                 <br />
 
                                 <h1 className="ItemTitle">
-                                    Potato Salad with meat
+                                    Potato Salad with Chicken
                                 </h1>
-                                <br />
+                                <p className="PriceStyle">$8.64</p>
                             </span>
 
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd1}
-                                    aria-label={'Add Potato Salad'}
+                                    aria-label={
+                                        'Add 1 order of Potato Salad from the cart'
+                                    }
                                     className="ItemAdd button OptMenuStyle is-success"
                                 >
                                     +
@@ -535,12 +558,14 @@ export default class Main extends React.Component {
                             <h1 className="ItemTitle">
                                 Cheese Pizza with appetizer
                             </h1>
+                            <p className="PriceStyle">$15.62</p>
+
                             <br />
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd2}
                                     aria-label={
-                                        'Add 1 order of Cheese Pizza to your cart'
+                                        'Add 1 order of Cheese Pizza with appetizer to your cart'
                                     }
                                     className="IItemAdd button OptMenuStyle is-success"
                                 >
@@ -553,7 +578,7 @@ export default class Main extends React.Component {
                                     onClick={this.ItemRemove2}
                                     disabled={this.state.Item2 === 0}
                                     aria-label={
-                                        'Remove 1 order of Cheese Pizza from the cart'
+                                        'Remove 1 order of Cheese Pizza with appetizer from the cart'
                                     }
                                     className="ItemRemove button OptMenuStyle is-danger"
                                 >
@@ -567,13 +592,15 @@ export default class Main extends React.Component {
                             <br />
 
                             <h1 className="ItemTitle">Hamburger with fries</h1>
+                            <p className="PriceStyle">$11.96</p>
+
                             <br />
 
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd3}
                                     aria-label={
-                                        'Add 1 Burger combo to your cart'
+                                        'Add 1 order of Hamburger with fries to your cart'
                                     }
                                     className="ItemAdd button OptMenuStyle is-success"
                                 >
@@ -586,7 +613,7 @@ export default class Main extends React.Component {
                                     onClick={this.ItemRemove3}
                                     disabled={this.state.Item3 === 0}
                                     aria-label={
-                                        'Remove 1 Hamburger from the cart'
+                                        'Remove 1 order of Hamburger with fries from the cart'
                                     }
                                     className="ItemRemove button OptMenuStyle is-danger"
                                 >
@@ -598,21 +625,22 @@ export default class Main extends React.Component {
                         <br />
                     </main>
 
-                    {/* // Newer Dinner update */}
-
                     <main className="row">
                         <section className="ItemTab col">
                             <span className="ImgStyle">
                                 <br />
 
                                 <h1 className="ItemTitle">Steak Dinner</h1>
+                                <p className="PriceStyle">$22.98</p>
                                 <br />
                             </span>
 
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ExAdd1}
-                                    aria-label={'Add Potato Salad'}
+                                    aria-label={
+                                        'Add 1 order of Steak Dinner to the cart'
+                                    }
                                     className="ItemAdd button OptMenuStyle is-success"
                                 >
                                     +
@@ -624,7 +652,7 @@ export default class Main extends React.Component {
                                     onClick={this.ExRemove1}
                                     disabled={this.state.Ex1 === 0}
                                     aria-label={
-                                        'Remove 1 order of Potato Salad from the cart'
+                                        'Remove 1 order of Steak Dinner from the cart'
                                     }
                                     className="ItemRemove button OptMenuStyle is-danger"
                                 >
@@ -637,12 +665,13 @@ export default class Main extends React.Component {
                             <br />
 
                             <h1 className="ItemTitle">Supreme Salad</h1>
+                            <p className="PriceStyle">$17.58</p>
                             <br />
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ExAdd2}
                                     aria-label={
-                                        'Add 1 order of Cheese Pizza to your cart'
+                                        'Add 1 order of Supreme Salad to your cart'
                                     }
                                     className="IItemAdd button OptMenuStyle is-success"
                                 >
@@ -655,7 +684,7 @@ export default class Main extends React.Component {
                                     onClick={this.ExRemove2}
                                     disabled={this.state.Ex2 === 0}
                                     aria-label={
-                                        'Remove 1 order of Cheese Pizza from the cart'
+                                        'Remove 1 order of Supreme Salad from the cart'
                                     }
                                     className="ItemRemove button OptMenuStyle is-danger"
                                 >
@@ -668,14 +697,15 @@ export default class Main extends React.Component {
                         <section className="ItemTab col">
                             <br />
 
-                            <h1 className="ItemTitle">Chef's Duck Dinner</h1>
+                            <h1 className="ItemTitle">Duck Dinner</h1>
+                            <p className="PriceStyle">$19.98</p>
                             <br />
 
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ExAdd3}
                                     aria-label={
-                                        'Add 1 Burger combo to your cart'
+                                        'Add 1 order of Duck Dinner to your cart'
                                     }
                                     className="ItemAdd button OptMenuStyle is-success"
                                 >
@@ -688,7 +718,7 @@ export default class Main extends React.Component {
                                     onClick={this.ExRemove3}
                                     disabled={this.state.Ex3 === 0}
                                     aria-label={
-                                        'Remove 1 Hamburger from the cart'
+                                        'Remove 1 order of Duck Dinner from the cart'
                                     }
                                     className="ItemRemove button OptMenuStyle is-danger"
                                 >
@@ -707,13 +737,14 @@ export default class Main extends React.Component {
                             <br />
 
                             <h1 className="ItemTitle">Chips with Salsa</h1>
+                            <p className="PriceStyle">$9.72</p>
                             <br />
 
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd4}
                                     aria-label={
-                                        'Add Chips with Salsa to the cart'
+                                        'Add 1 order of Chips with Salsa to the cart'
                                     }
                                     className="ItemAdd button OptMenuStyle is-success"
                                 >
@@ -740,13 +771,14 @@ export default class Main extends React.Component {
                             <br />
 
                             <h1 className="ItemTitle">French Fries</h1>
+                            <p className="PriceStyle">$6.44</p>
                             <br />
 
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd5}
                                     aria-label={
-                                        'Add noddles with eggs to the cart'
+                                        'Add 1 order of French Fries to the cart'
                                     }
                                     className="ItemAdd button OptMenuStyle is-success"
                                 >
@@ -759,7 +791,7 @@ export default class Main extends React.Component {
                                     onClick={this.ItemRemove5}
                                     disabled={this.state.Item5 === 0}
                                     aria-label={
-                                        'Remove 1 order of noddles with eggs from the cart'
+                                        'Remove 1 order of French Fries from the cart'
                                     }
                                     className="ItemRemove button OptMenuStyle is-danger"
                                 >
@@ -774,13 +806,14 @@ export default class Main extends React.Component {
                             <br />
 
                             <h1 className="ItemTitle">Jalapeño Boppers</h1>
+                            <p className="PriceStyle">$8.26</p>
                             <br />
 
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ExAdd4}
                                     aria-label={
-                                        'Add Chips with Salsa to the cart'
+                                        'Add 1 order of Jalapeño Boppers to the cart'
                                     }
                                     className="ItemAdd button OptMenuStyle is-success"
                                 >
@@ -793,7 +826,7 @@ export default class Main extends React.Component {
                                     onClick={this.ExRemove4}
                                     disabled={this.state.Ex4 === 0}
                                     aria-label={
-                                        'Remove 1 order of Chips with Salsa from the cart'
+                                        'Remove 1 order of Jalapeño Boppers from the cart'
                                     }
                                     className="ItemRemove button OptMenuStyle is-danger"
                                 >
@@ -807,13 +840,14 @@ export default class Main extends React.Component {
                             <br />
 
                             <h1 className="ItemTitle">Side salad</h1>
+                            <p className="PriceStyle">$4.54</p>
                             <br />
 
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ExAdd5}
                                     aria-label={
-                                        'Add noddles with eggs to the cart'
+                                        'Add 1 order of Side salad to the cart'
                                     }
                                     className="ItemAdd button OptMenuStyle is-success"
                                 >
@@ -826,7 +860,7 @@ export default class Main extends React.Component {
                                     onClick={this.ExRemove5}
                                     disabled={this.state.Ex5 === 0}
                                     aria-label={
-                                        'Remove 1 order of noddles with eggs from the cart'
+                                        'Remove 1 order of Side salad from the cart'
                                     }
                                     className="ItemRemove button OptMenuStyle is-danger"
                                 >
@@ -839,13 +873,14 @@ export default class Main extends React.Component {
                             <br />
 
                             <h1 className="ItemTitle">Chicken tenders</h1>
+                            <p className="PriceStyle">$6.50</p>
                             <br />
 
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ExAdd6}
                                     aria-label={
-                                        'Add noddles with eggs to the cart'
+                                        'Add 1 order of Chicken tenders to the cart'
                                     }
                                     className="ItemAdd button OptMenuStyle is-success"
                                 >
@@ -858,7 +893,7 @@ export default class Main extends React.Component {
                                     onClick={this.ExRemove6}
                                     disabled={this.state.Ex6 === 0}
                                     aria-label={
-                                        'Remove 1 order of noddles with eggs from the cart'
+                                        'Remove 1 order of Chicken tenders from the cart'
                                     }
                                     className="ItemRemove button OptMenuStyle is-danger"
                                 >
@@ -875,13 +910,16 @@ export default class Main extends React.Component {
                         <section className="ItemTab col">
                             <br />
 
-                            <h1 className="ItemTitle">Coffee</h1>
+                            <h1 className="ItemTitle">Cup of Coffee</h1>
+                            <p className="PriceStyle">$4.50</p>
                             <br />
 
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd6}
-                                    aria-label={'Add Latte to the cart'}
+                                    aria-label={
+                                        'Add 1 order of Cup of Coffee to the cart'
+                                    }
                                     className="ItemAdd button OptMenuStyle is-success"
                                 >
                                     +
@@ -893,7 +931,7 @@ export default class Main extends React.Component {
                                     onClick={this.ItemRemove6}
                                     disabled={this.state.Item6 === 0}
                                     aria-label={
-                                        'Remove 1 order of Cappuccino from the cart'
+                                        'Remove 1 order of Cup of Coffee from the cart'
                                     }
                                     className="ItemRemove button OptMenuStyle is-danger"
                                 >
@@ -906,12 +944,15 @@ export default class Main extends React.Component {
                             <br />
 
                             <h1 className="ItemTitle">Smoothie</h1>
+                            <p className="PriceStyle">$5.65</p>
                             <br />
 
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ItemAdd9}
-                                    aria-label={'Add 1 smoothie to your cart'}
+                                    aria-label={
+                                        'Add 1 order of smoothie to your cart'
+                                    }
                                     className="ItemAdd button OptMenuStyle is-success"
                                 >
                                     +
@@ -923,7 +964,7 @@ export default class Main extends React.Component {
                                     onClick={this.ItemRemove9}
                                     disabled={this.state.Item9 === 0}
                                     aria-label={
-                                        'Remove 1 order of Toast with fried eggs from the cart'
+                                        'Remove 1 order of Smoothie from the cart'
                                     }
                                     className="ItemRemove button OptMenuStyle is-danger"
                                 >
@@ -938,12 +979,15 @@ export default class Main extends React.Component {
                             <br />
 
                             <h1 className="ItemTitle">Cola Soda</h1>
+                            <p className="PriceStyle">$2.64</p>
                             <br />
 
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ExAdd7}
-                                    aria-label={'Add Latte to the cart'}
+                                    aria-label={
+                                        'Add 1 order of Cola Soda to the cart'
+                                    }
                                     className="ItemAdd button OptMenuStyle is-success"
                                 >
                                     +
@@ -955,7 +999,7 @@ export default class Main extends React.Component {
                                     onClick={this.ExRemove7}
                                     disabled={this.state.Ex7 === 0}
                                     aria-label={
-                                        'Remove 1 order of Cappuccino from the cart'
+                                        'Remove 1 order of Cola Soda from the cart'
                                     }
                                     className="ItemRemove button OptMenuStyle is-danger"
                                 >
@@ -968,12 +1012,13 @@ export default class Main extends React.Component {
                             <br />
 
                             <h1 className="ItemTitle">Diet Cola Soda</h1>
+                            <p className="PriceStyle">$2.68</p>
                             <br />
 
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ExAdd8}
-                                    aria-label={'Add item'}
+                                    aria-label={'Add 1 order of Diet Cola Soda'}
                                     className="ItemAdd button OptMenuStyle is-success"
                                 >
                                     +
@@ -984,7 +1029,9 @@ export default class Main extends React.Component {
                                 <button
                                     onClick={this.ExRemove8}
                                     disabled={this.state.Ex8 === 0}
-                                    aria-label={'Remove Item'}
+                                    aria-label={
+                                        'Remove 1 order of Diet Cola Soda'
+                                    }
                                     className="ItemRemove button OptMenuStyle is-danger"
                                 >
                                     -
@@ -997,12 +1044,15 @@ export default class Main extends React.Component {
                             <br />
 
                             <h1 className="ItemTitle">Lemonade</h1>
+                            <p className="PriceStyle">$2.70</p>
                             <br />
 
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ExAdd9}
-                                    aria-label={'Add Latte to the cart'}
+                                    aria-label={
+                                        'Add 1 order of Lemonade to the cart'
+                                    }
                                     className="ItemAdd button OptMenuStyle is-success"
                                 >
                                     +
@@ -1014,7 +1064,7 @@ export default class Main extends React.Component {
                                     onClick={this.ExRemove9}
                                     disabled={this.state.Ex9 === 0}
                                     aria-label={
-                                        'Remove 1 order of Cappuccino from the cart'
+                                        'Remove 1 order of Lemonade from the cart'
                                     }
                                     className="ItemRemove button OptMenuStyle is-danger"
                                 >
@@ -1027,12 +1077,15 @@ export default class Main extends React.Component {
                             <br />
 
                             <h1 className="ItemTitle">Iced tea</h1>
+                            <p className="PriceStyle">$2.70</p>
                             <br />
 
                             <span className="OrderTab">
                                 <button
                                     onClick={this.ExAdd10}
-                                    aria-label={'Add 1 smoothie to your cart'}
+                                    aria-label={
+                                        'Add 1 order of Iced tea to your cart'
+                                    }
                                     className="ItemAdd button OptMenuStyle is-success"
                                 >
                                     +
@@ -1043,7 +1096,9 @@ export default class Main extends React.Component {
                                 <button
                                     onClick={this.ExRemove10}
                                     disabled={this.state.Ex10 === 0}
-                                    aria-label={'Remove item'}
+                                    aria-label={
+                                        'Remove 1 order of Iced tea from your cart'
+                                    }
                                     className="ItemRemove button OptMenuStyle is-danger"
                                 >
                                     -

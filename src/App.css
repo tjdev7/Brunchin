@@ -24,7 +24,7 @@ ul {
     /* background-color: #ffa500; */
     list-style-type: none;
     margin: 0rem;
-    padding: 1rem 2rem 4.5rem 2rem;
+    padding: 1rem 2rem 8.5rem 2rem;
 }
 
 /* button {
@@ -60,6 +60,11 @@ ul {
     padding: -3rem;
     margin-top: 0.5rem;
     font-size: 2.8rem;
+}
+
+.PriceStyle {
+    font-size: 2.8rem;
+    padding: -1rem;
 }
 
 button {
@@ -123,6 +128,14 @@ h2 {
 
 .ModelTab {
     background-color: #ffa500;
+}
+
+.SelectStyle {
+    width: 45%;
+    border-radius: 5%;
+    background-color: #393434;
+    color: aliceblue;
+    margin: 0.1rem;
 }
 
 /*
