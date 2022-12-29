@@ -365,10 +365,10 @@ export default class Main extends React.Component {
                                     {this.state.Itemcount}
                                 </button>
 
-                                <button className="CheckoutBtnStyle button is-large is-dark">
+                                {/* <button className="CheckoutBtnStyle button is-large is-dark">
                                     $0.00
-                                    {/* {this.state.PriceTotal} */}
-                                </button>
+                                     {this.state.PriceTotal}
+                                </button> */}
                             </span>
                         </li>
                     </ul>
