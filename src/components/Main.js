@@ -388,15 +388,19 @@ export default class Main extends React.Component {
                                 </h1>
                             </Modal.Header>
                             <Modal.Body>
+                                <br />
+                                <br />
                                 <h5>
-                                    Wait time for everything should be around 20
-                                    minutes
+                                    Your food should be ready in around 10 to 30
+                                    minutes.
                                 </h5>
-                                <h5>
+                                <br />
+                                <br />
+                                {/* <h5>
                                     Total number of items:{' '}
                                     {this.state.Itemcount}
                                 </h5>
-                                <h5>Total:</h5>
+                                <h5>Total:</h5> */}
                             </Modal.Body>
                             <Modal.Footer>
                                 <Button
