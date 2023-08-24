@@ -10,7 +10,7 @@
 -   Code cleaning
 -   New documentation
 -   Bug fix (Major, Medium, Minor)
-
+-   Tests (Manual and automatic)
 ---
 
 ## PR description
@@ -22,5 +22,5 @@
 
 <!---
 Example:
-Fix|Update for Brunchin/repository_name/PR-Number/name_of_fix
+Fix|Update for Brunchin/PR-Number/name_of_fix
 --->
