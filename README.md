@@ -1,7 +1,11 @@
 
+
 <div class="READMEstyling" align="center">
+
     ![App logo](./public/img/Brunchin_logo.png)
+
 </div>
+
 # Brunchin
 
 An open source point of sale management system with a constantly expanding service platform. 
@@ -30,7 +34,9 @@ Brunchin is currently in development and is looking for any contributors to help
 ### Mobile screenshot:
 
 <div class="READMEstyling" align="center">
+
     ![Mobile Splash page](./public/img/Mobile_Brunchin_screencap.png)
+
 </div>
 
 ## How to use:
