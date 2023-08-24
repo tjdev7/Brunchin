@@ -2,7 +2,7 @@
 
 <div class="READMEstyling" align="center">
 
-    ![App logo](./public/img/Brunchin_logo.png)
+  ![App logo](./public/img/Brunchin_logo.png)
 
 </div>
 
@@ -35,7 +35,7 @@ Brunchin is currently in development and is looking for any contributors to help
 
 <div class="READMEstyling" align="center">
 
-    ![Mobile Splash page](./public/img/Mobile_Brunchin_screencap.png)
+   ![Mobile Splash page](./public/img/Mobile_Brunchin_screencap.png)
 
 </div>
 
