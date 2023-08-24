@@ -10,8 +10,8 @@
 
 An open source point of sale management system with a constantly expanding service platform. 
 
-- [Why this app as created](#why-this-app-was-created)
-- [App screenshost](#app-screenshot)
+- [Why was this app created](#why-was-this-app-created)
+- [App screenshots](#app-screenshots)
 - [How to use](#how-to-use)
 - [Testing tools used](#testing-tools-used-for-the-app)
 - [Running automated tests](#running-automated-tests)
@@ -21,9 +21,11 @@ An open source point of sale management system with a constantly expanding servi
 
 
 
-## Why this app as created:
+## Why was this app created:
 
 Brunchin was initially created as an example of an app using React state, regular expressions, core Javascript functions and seamless U.X design. But it has since evolved into a biggger project where multiple people are expected to contribute. Brunchin takes inspiration from Toast and Square's POS system and intends to offer some of it's features as an open source app which anybody can contribute and improve. 
+
+Future updates will include a live website, as well as a subscription service available to users.
 
 Brunchin is currently in development and is looking for any contributors to help with the dev cycle. Please see the [project resources section for more information](https://github.com/tjdev7/Brunchin/tree/main/docs)
 
